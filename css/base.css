@@ -6,8 +6,8 @@ body {
     padding: 0;
     outline: none;
     font-family: 微軟儷黑體, 微軟正黑體, Arial, Helvetica, Verdana, \5FAE\8EDF\6B63\9ED1\9AD4, sans-serif, 微軟儷黑體, 微軟正黑體, Arial, Helvetica, Myriad Pro, Microsoft, bauerbodonistd-roman, Century Gothic, "Asap", Futura, "Lucida Grande", Geneva, Helvetica, "sourcehansans-tc-normal", "sans-serif", Tahoma;
-    background-color: #fff;
-    font-size: 18px;   
+    background-color: #F7F2F7;
+    font-size: 18px;
 }
 p,
 ul,
@@ -80,10 +80,10 @@ html::-webkit-scrollbar-track {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     margin: 0;
-    background: #fff;
+    background: #461232;
 }
 html::-webkit-scrollbar-thumb {
-    background: #A20013;
+    background: #a44665;
 }
 h1,h2,h3{padding:0;margin: 0;}
 
@@ -166,7 +166,7 @@ a:hover .overlay-color {
     cursor: pointer;
     width: 40px;
     height: 40px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0);
     border-radius: 5px;
     display: block;
 }
@@ -206,23 +206,91 @@ a:hover .overlay-color {
     }
     }
 /*外框*/
-.container{}
+.container{max-width:1920px;margin:0 auto;font-weight: bold;}
 .flex{display:flex;align-items: center;}
 /*header*/
 header{}
-.header{background-color:#461232;padding:15px 0;}
-.header .frame_box.flex{justify-content:space-between;}
-.header .logo{width:90px;height:47px;}
-.header .menu ul{}
-.header .menu li{margin-right:20px;}
-.header .menu li a{color: #B87486;font-size:20px;font-weight: bold;}
-.header .menu li a:hover,.header .menu li.act a{color: #E8E6D9;}
-.header .menu li:last-child{margin-right:0;}
-.header .community ul{}
-.header .community li{width:35px;height:35px;margin-right:15px;}
-.header .community li:last-child{margin-right:0;}
+.header_view{
+    width:100%;height:327px;
+    background: url(../images/header_view.jpg) center bottom no-repeat;
+    background-color:#461232;
+}
+.menu_bar{background-color:#461232;padding:15px 0;}
+.menu_bar .frame_box.flex{justify-content:space-between;}
+.menu_bar .logo{width:90px;height:47px;}
+.menu_bar .menu ul{}
+.menu_bar .menu li{margin-right:20px;}
+.menu_bar .menu li a{color: #B87486;font-size:20px;}
+.menu_bar .menu li a:hover,.menu_bar .menu li.act a{color: #E8E6D9;}
+.menu_bar .menu li:last-child{margin-right:0;}
+.menu_bar .community ul{}
+.menu_bar .community li{width:35px;height:35px;margin-right:15px;}
+.menu_bar .community li:last-child{margin-right:0;}
+/* 快訊 */
+.good_box{font-size:18px;align-items: center;background-color:#E8E6D9;padding:10px 0;}
+.good_box .title{
+    width: 70px;height: 27px;
+    background-color: #DA2F5A;
+    text-align: center;color: #fff;
+    letter-spacing: 5px;margin-right: 10px;
+    -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+}
+.good_box .title.flex{justify-content:center;}
+.good_box .title p{color:#fff;}
+.good_box .txt_box{width:90%;height:25px;white-space:nowrap;overflow: hidden;}
+.good_box .txt{white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
+.good_box .txt_box.owl-theme .owl-controls{display:none;}
+/* 快訊 ed*/
 /*header ed*/
 /*main*/
+/* 內文區塊 */
+.section {margin-bottom: 30px;}
+.section .title{    
+   width:100%;
+   text-align: center;
+   margin: 20px 0;
+}
+.section .title p{
+    font-size: 28px;
+    display:inline-block;margin: 0;color:#7C174D;padding:0px 50px;
+    background: url(../images/title_bg.svg) center bottom no-repeat;
+}
+/* 首頁 */
+/* 最新賽程 */
+.section .schedule{}
+.section .schedule ul{}
+.section .schedule li{
+    width: calc((100% - 95px)/4);
+    margin-right: 30px;
+    background-color:#FFFFFF;    
+}
+.section .schedule .head.flex{ align-items:flex-start;}
+.section .schedule li:last-child{margin-right:0;}
+.section .schedule .head{
+    font-size: 16px;
+    font-weight:bold;
+    padding:10px;
+    background-color:#E8E6D9;    
+}
+.section .schedule .head p{width:60px;margin-right:20px;}
+.section .schedule .head .time{text-align:center;width:120px;}
+.section .schedule .txt_box{padding:15px 5px 10px;text-align: center;font-size: 14px;}
+.section .schedule .txt_box.flex{justify-content: center;}
+.section .schedule .txt_box .team_img{width:75px;}
+.section .schedule .txt_box .team_img img{width:100%;}
+.section .schedule .score_box{margin:0 15px;}
+.section .schedule .score_box .score{
+    width:30px;height:30px;display:flex;align-items:center;justify-content: center;
+    background-color:#E8E6D9;
+    margin-right:10px;
+}
+.section .schedule .score_box .score:last-child{margin-right:0;}
+.section .schedule .pk_box{margin-top:5px;}
+.section .schedule .pk_box .pk1,.section .schedule .pk_box .pk1{width:30px;height:30px;}
+
+/* 首頁 ed*/
+/* 內文區塊ed */
 /*main ed*/
 /*footer*/
 footer{width:100%;padding:20px 0;background-color:#461232;overflow:hidden;color:#fff;text-align:center;}

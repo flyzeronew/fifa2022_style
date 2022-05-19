@@ -40,6 +40,24 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
+// 輪播-快訊
+    $('.good_box .txt_box').owlCarousel({
+        URLhashListener:true,
+        startPosition:'URLHash',
+        animateIn: 'fadeInDown',
+        lazyContent:true,
+        items:1,
+        loop:true,
+        nav:false,
+        margin:0,
+        autoplay:true,
+        smartSpeed:800,
+        autoplayTimeout:3000,
+        autoplayHoverPause:false,
+        navText:['',''],
+    });
+// 輪播
+
 });
 </script>
 
@@ -49,33 +67,44 @@ $(document).ready(function(){
 <!--container主架構-->
 <!--GO~Top-->
 <div id="back"> 
-<div id="back-img1"><img src="images/gotop.png" alt="top"/></div>
+<div id="back-img1"><img src="images/gotop.svg" alt="top"/></div>
 </div>
 <!--GO~Top end-->
 <div class="container">   
 <!--header -->
-<header>    
-    <div class="header">
-        <div class="frame_box flex">
-            <div class="logo"><a href="https://news.tvbs.com.tw/" target="_blank" ><img src="images/TVBS_Logo.svg" alt="logo"/></a></div>
-            <div class="menu">
-                <ul class="flex">
-                    <li class="act"><a href="##">首頁</a></li>
-                    <li><a href="##">賽程預告</a></li>
-                    <li><a href="##">各組戰績</a></li>
-                    <li><a href="##">焦點新聞</a></li>
-                    <li><a href="##">精彩瞬間</a></li>
-                    <li><a href="##">世足影音</a></li>
-                    <li><a href="##">下載APP</a></li>
-                    <li><a href="##">預留欄位</a></li>
-                    <li><a href="##">預留欄位</a></li>
-                </ul>
+<header>
+    <div class="header_view">
+        <div class="menu_bar">
+            <div class="frame_box flex">
+                <div class="logo"><a href="https://news.tvbs.com.tw/" target="_blank" ><img src="images/TVBS_Logo.svg" alt="logo"/></a></div>
+                <div class="menu">
+                    <ul class="flex">
+                        <li class="act"><a href="##">首頁</a></li>
+                        <li><a href="##">賽程預告</a></li>
+                        <li><a href="##">各組戰績</a></li>
+                        <li><a href="##">焦點新聞</a></li>
+                        <li><a href="##">精彩瞬間</a></li>
+                        <li><a href="##">世足影音</a></li>
+                        <li><a href="##">下載APP</a></li>
+                        <li><a href="##">預留欄位</a></li>
+                        <li><a href="##">預留欄位</a></li>
+                    </ul>
+                </div>
+                <div class="community">
+                    <ul class="flex">
+                        <li><a href="##"><img src="images/img_Facebook_TVBS.svg" alt="fb"/></a></li>
+                        <li><a href="##"><img src="images/img_Line_TVBS.svg" alt="line"/></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="community">
-                <ul class="flex">
-                    <li><a href="##"><img src="images/img_Facebook_TVBS.svg" alt="fb"/></a></li>
-                    <li><a href="##"><img src="images/img_Line_TVBS.svg" alt="line"/></a></li>
-                </ul>
+        </div>
+    </div>
+    <div class="good_box">
+        <div class="frame_box flex">
+            <div class="title flex"><p>快訊</p></div>
+            <div class="txt_box">
+                <div class="txt"><a href="##">《奬金50萬》臺中原創音樂大賽　報名至5/14中午12點止。</a></div>
+                <div class="txt"><a href="##">東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS</a></div>                   
             </div>
         </div>
     </div>
@@ -83,8 +112,150 @@ $(document).ready(function(){
 <!--header ed-->
 <!--main-->
 <main>
-<article>
-</article>
+    <article>
+        <div class="frame_box">
+            <div class="section">
+                <div class="title"><p>最新賽程</p></div>
+                <div class="schedule">
+                    <ul class="flex">
+                        <li>
+                            <div class="head flex">
+                                <p>16強賽</p>
+                                <div class="time">2022/12/03 00:00</div>
+                            </div>
+                            <div class="txt_box flex">
+                                <div class="team1 team_img">
+                                    <img src="images/e01.png" alt="team"/>
+                                    <p class="team_name">西班牙</p>
+                                </div>
+                                <div class="score_box">
+                                    <div class="flex">
+                                        <div class="score1 score">3</div>
+                                        <div class="score2 score">3</div>
+                                    </div>
+                                    <div class="pk_box">
+                                        <span>(</span>
+                                        <span class="pk1">2</span>
+                                        <span>pk</span>
+                                        <span class="pk2">1</span>
+                                        <span>)</span>
+                                    </div>
+                                </div>                               
+                                <div class="team2 team_img">
+                                    <img src="images/a04.png" alt="team"/>
+                                    <p class="team_name">法國</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="head flex">
+                                <p>16強賽</p>
+                                <div class="time">2022/12/03 00:00</div>
+                            </div>
+                            <div class="txt_box flex">
+                                <div class="team1 team_img">
+                                    <img src="images/e01.png" alt="team"/>
+                                    <p class="team_name">西班牙</p>
+                                </div>
+                                <div class="score_box">
+                                    <div class="flex">
+                                        <div class="score1 score">3</div>
+                                        <div class="score2 score">3</div>
+                                    </div>
+                                    <div class="pk_box">
+                                        <span>(</span>
+                                        <span class="pk1">2</span>
+                                        <span>pk</span>
+                                        <span class="pk2">1</span>
+                                        <span>)</span>
+                                    </div>
+                                </div>                               
+                                <div class="team2 team_img">
+                                    <img src="images/a04.png" alt="team"/>
+                                    <p class="team_name">法國</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="head flex">
+                                <p>16強賽</p>
+                                <div class="time">2022/12/03 00:00</div>
+                            </div>
+                            <div class="txt_box flex">
+                                <div class="team1 team_img">
+                                    <img src="images/e01.png" alt="team"/>
+                                    <p class="team_name">西班牙</p>
+                                </div>
+                                <div class="score_box">
+                                    <div class="flex">
+                                        <div class="score1 score">3</div>
+                                        <div class="score2 score">3</div>
+                                    </div>
+                                    <div class="pk_box">
+                                        <span>(</span>
+                                        <span class="pk1">2</span>
+                                        <span>pk</span>
+                                        <span class="pk2">1</span>
+                                        <span>)</span>
+                                    </div>
+                                </div>                               
+                                <div class="team2 team_img">
+                                    <img src="images/a04.png" alt="team"/>
+                                    <p class="team_name">法國</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="head flex">
+                                <p>16強賽</p>
+                                <div class="time">2022/12/03 00:00</div>
+                            </div>
+                            <div class="txt_box flex">
+                                <div class="team1 team_img">
+                                    <img src="images/e01.png" alt="team"/>
+                                    <p class="team_name">西班牙</p>
+                                </div>
+                                <div class="score_box">
+                                    <div class="flex">
+                                        <div class="score1 score">3</div>
+                                        <div class="score2 score">3</div>
+                                    </div>
+                                    <div class="pk_box">
+                                        <span>(</span>
+                                        <span class="pk1">2</span>
+                                        <span>pk</span>
+                                        <span class="pk2">1</span>
+                                        <span>)</span>
+                                    </div>
+                                </div>                               
+                                <div class="team2 team_img">
+                                    <img src="images/a04.png" alt="team"/>
+                                    <p class="team_name">法國</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+
+            <div class="section">
+                <div class="title"><p>世足頭條</p></div>
+            </div>
+
+            <div class="section">
+                <div class="title"><p>各組賽況</p></div>
+            </div>
+
+            <div class="section">
+                <div class="title"><p>精彩瞬間</p></div>
+            </div>
+
+            <div class="section">
+                <div class="title"><p>影音放送</p></div>
+            </div>
+            
+        </div>
+    </article>
 </main>
 <!--main ed-->
 <!--footer-->
