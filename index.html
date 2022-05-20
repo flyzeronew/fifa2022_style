@@ -98,7 +98,9 @@ $(document).ready(function(){
 // 輪播
 // 漢堡按鈕
     $(window).resize(function(){
-        $('.menu_fixed').removeClass('act');
+        if($(this).width()>767){
+            hamCancel();
+        }
     });
     $('.ham').click(function(){
         $(this).toggleClass('op');
@@ -107,46 +109,55 @@ $(document).ready(function(){
                 transform:'rotate(180deg)',
                 translation:'0.3s',
                 position:'absolute',                
-                right:0,top:0
-            });            
-            $('.menu.mo .list ul').css({'white-space':'normal',display:'block'});
-            $('.menu.mo .list').css({
-                'overflow': 'hidden',
-                width:'100%',
-                'padding':'25px 0 10px 0'
+                right:'15px',top:0
             });
-            $('.menu.mo .list li').css({                                
-                display:'inline-block',
-                'margin-right':'15px',
-                'margin-bottom':'15px',
-            });            
-            
-            $('.menu.mo .fb').css({display:'inline-block','margin':'0'});
-            $('.menu.mo .flex').css({display:'block'});
-            $('.menu_fixed').addClass('act');
+            hamGo();
         }else{
-            $(this).css({
-                transform:'rotate(0deg)',
-                translation:'0.3s',
-                position:'relative',                
-                right:0,top:0
-            });
-            $('.menu.mo .list ul').css({'white-space':'nowrap',display:'flex'});
-            $('.menu.mo .list').css({
-                'overflow-x': 'auto',
-                width:'90%',
-                'padding-top':'0px'
-            });
-            $('.menu.mo .list li').css({
-                display:'block',
-                'margin-right':'15px',
-                'margin-bottom':'0px',
-            }); 
-            $('.menu.mo .fb').css({display:'none'});
-            $('.menu.mo .flex').css({display:'flex'});
-            $('.menu_fixed').removeClass('act');
+            hamCancel();
         }
     });
+    function hamGo(){    
+        $('html').css({'overflow-y': 'hidden'});
+        $('.menu.mo .list ul').css({'white-space':'normal',display:'block'});
+        $('.menu.mo .list').css({
+            'overflow': 'hidden',
+            width:'100%',
+            'padding':'35px 0 0 0'
+        });
+        $('.menu.mo .list li').css({                                
+            display:'inline-block',
+            'margin-right':'15px',
+            'margin-bottom':'20px',
+        });            
+        
+        $('.menu.mo .fb').css({display:'inline-block','margin':'0'});
+        $('.menu.mo .flex').css({display:'block'});
+        $('.menu_fixed .clear').show();
+    }
+    function hamCancel(){
+        $('.ham').css({
+            transform:'rotate(0deg)',
+            translation:'0.3s',
+            position:'relative',                
+            right:0,top:0
+        });
+        $('html').css({'overflow-y': 'auto'});
+        $('.menu.mo .list ul').css({'white-space':'nowrap',display:'flex'});
+        $('.menu.mo .list').css({
+            'overflow-x': 'auto',
+            width:'90%',
+            'padding-top':'0px'
+        });
+        $('.menu.mo .list li').css({
+            display:'block',
+            'margin-right':'15px',
+            'margin-bottom':'0px',
+        }); 
+        $('.menu.mo .fb').css({display:'none'});
+        $('.menu.mo .flex').css({display:'flex'});
+        $('.menu_fixed .clear').hide();
+        $('.ham').removeClass('op');
+    }
 });
 </script>
 
@@ -164,7 +175,8 @@ $(document).ready(function(){
 <header>
 
     <div class="header_view">
-        <div class="menu_fixed">
+        <div class="menu_fixed">            
+            <div class="clear"></div>
             <div class="menu_bar">
                 <div class="frame_box flex">
                     <div class="logo"><a href="https://news.tvbs.com.tw/" target="_blank" ><img src="images/TVBS_Logo.svg" alt="logo"/></a></div>
