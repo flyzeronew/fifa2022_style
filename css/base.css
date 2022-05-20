@@ -268,8 +268,7 @@ header{position: relative;}
     .menu.mo .list li.fb a{width:30px;height:30px;margin-right:15px;}
     .menu.mo .list li.fb{display:none;margin-bottom:0px;}   
 }
-@media (max-width:359px){
-    .menu_bar .logo {margin-right: 30px;}
+@media (max-width:374px){    
     .menu_bar h1 {font-size: 20px;}
 }
 
