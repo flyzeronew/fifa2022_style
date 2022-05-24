@@ -567,6 +567,7 @@ top:40% !important;
     .section .team_list.flex{display:block;}
     .section .team_listL{margin-bottom:20px;}
     .section .team_listL,.section .team_listR{width:100%;}
+    .section .team_listR .txt_box.flex {justify-content:space-between;}
 }
 @media (max-width:767px){
     .section .team_list.flex{display:block;}
@@ -579,7 +580,7 @@ top:40% !important;
         background-color:#FFFFFF;
     }
     .section .team_listR .txt_box {padding: 20px;}
-    .section .team_listR .txt_box.flex {justify-content:space-between;}
+    
 }
 /*更多新聞*/
 .section .team_pack {margin-bottom: 30px;overflow: hidden;}
