@@ -27,6 +27,19 @@ $(function() {
         }
         return [];
     }
+
+    $(window).scroll(function() {
+        console.log("scrollTop:"+$(window).scrollTop());
+        console.log("_height:"+$(window).height());
+        console.log("doc_height:"+$(document).height());
+        if($(window).scrollTop() + $(window).height() > $(document).height()-100) {
+            //alert("near bottom!");
+            $("#back").css({"bottom":"112px","transition":"0.5s"});
+        }else{
+            $("#back").css({"bottom":"20px","transition":"0.5s"});
+        }
+     });
+
  /*gotop ed*/
 
 });
