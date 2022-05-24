@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">	
-<title>2022世界盃足球賽-賽程預告</title>
+<title>2022世界盃足球賽-球隊賽程</title>
 <meta name="Keywords" content="">
 <meta name="description" content="">
 <link rel="icon" href="" type="image/icon">
@@ -122,27 +122,26 @@ $(document).ready(function(){
         $('.ham').removeClass('op');
     }
 
-// 賽程下拉
-$('.contest').each(function(i){
-    $(this).find('.icon').click(function(){
-        $(this).toggleClass('op');
-        if($(this).hasClass('op')){
-            $(this).css({
-                transform:'rotate(180deg)',
-                translation:'0.3s'
-            });
-            $('.contest').eq(i).find('.list').slideDown();
-        }else{
-            $(this).css({
-                transform:'rotate(0deg)',
-                translation:'0.3s'
-            });
-            $(this).find('.list').slideUp();
-            $('.contest').eq(i).find('.list').slideUp();
-            $(this).removeClass('op');
-        }
-    });
+// 更多球隊下拉
+$('.tag_more').click(function(){
+    $(this).toggleClass('op');
+    if($(this).hasClass('op')){
+        $(this).find('.arraw').css({
+            transform:'rotate(180deg)',
+            translation:'0.3s'
+        });
+        $('.team_play ul').eq(1).slideDown();
+    }else{
+        $(this).find('.arraw').css({
+            transform:'rotate(0deg)',
+            translation:'0.3s'
+        });
+        $('.team_play ul').eq(1).slideUp();
+        $(this).removeClass('op');
+    }
+
 });
+
 });
 </script>
 
@@ -240,7 +239,7 @@ $('.contest').each(function(i){
                 <div class="nav">
                     <ul>
                         <li><a href="schedule.html">日期賽程</a></li>
-                        <li class="act"><a href="schedule_team.html">球賽賽程</a></li>
+                        <li class="act"><a href="schedule_team.html">球隊賽程</a></li>
                         <li><a href="schedule_group.html">小組賽程</a></li>
                     </ul>
                 </div>
@@ -265,7 +264,7 @@ $('.contest').each(function(i){
                             </li>
                         </ul>
                     </div>
-                    <div class="tag_more"><a href="##"><p>更多球隊</p></a></div>
+                    <div class="tag_more"><a href="##"><p>更多球隊</p><div class="arraw"><img src="images/expand_more2.svg" alt="arraw"/></div></a></div>
                 </div>
                 <div class="section">
                     <div class="team_play">
@@ -391,7 +390,128 @@ $('.contest').each(function(i){
                                 </div>
                             </li>
                         </ul>
-
+                        <ul>
+                            <li>
+                                <div class="type">16強賽</div>
+                                <div class="time">2022/12/18 18:00</div>
+                                <div class="team_box">
+                                    <div class="team1 team_img">
+                                        <img src="images/e01.png" alt="team"/>
+                                        <p class="team_name">西班牙</p>
+                                    </div>
+        
+                                    <div class="score_box">
+                                        <div class="flex">
+                                            <div class="score1 score">3</div>
+                                            <div class="score2 score">3</div>
+                                        </div>
+                                        <div class="pk_box">
+                                            <span>(</span>
+                                            <span class="pk1">2</span>
+                                            <span>PK</span>
+                                            <span class="pk2">1</span>
+                                            <span>)</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="team2 team_img">
+                                        <p class="team_name pc">法國</p>
+                                        <img src="images/a04.png" alt="team"/>                                            
+                                        <p class="team_name mo">法國</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="type">小組賽</div>
+                                <div class="time">2022/12/18 18:00</div>
+                                <div class="team_box">
+                                    <div class="team1 team_img">
+                                        <img src="images/c02.png" alt="team"/>
+                                        <p class="team_name">沙烏地阿拉伯</p>
+                                    </div>
+        
+                                    <div class="score_box">
+                                        <div class="flex">
+                                            <div class="score1 score">3</div>
+                                            <div class="score2 score">3</div>
+                                        </div>
+                                        <div class="pk_box">
+                                            <span>(</span>
+                                            <span class="pk1">2</span>
+                                            <span>PK</span>
+                                            <span class="pk2">1</span>
+                                            <span>)</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="team2 team_img">
+                                        <p class="team_name pc">沙烏地阿拉伯</p>
+                                        <img src="images/c02.png" alt="team"/>                                            
+                                        <p class="team_name mo">沙烏地阿拉伯</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="type">小組賽</div>
+                                <div class="time">2022/12/18 18:00</div>
+                                <div class="team_box">
+                                    <div class="team1 team_img">
+                                        <img src="images/e01.png" alt="team"/>
+                                        <p class="team_name">西班牙</p>
+                                    </div>
+        
+                                    <div class="score_box">
+                                        <div class="flex">
+                                            <div class="score1 score">3</div>
+                                            <div class="score2 score">3</div>
+                                        </div>
+                                        <div class="pk_box">
+                                            <span>(</span>
+                                            <span class="pk1">2</span>
+                                            <span>PK</span>
+                                            <span class="pk2">1</span>
+                                            <span>)</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="team2 team_img">
+                                        <p class="team_name pc">法國</p>
+                                        <img src="images/a04.png" alt="team"/>                                            
+                                        <p class="team_name mo">法國</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="type">小組賽</div>
+                                <div class="time">2022/12/18 18:00</div>
+                                <div class="team_box">
+                                    <div class="team1 team_img">
+                                        <img src="images/e01.png" alt="team"/>
+                                        <p class="team_name">西班牙</p>
+                                    </div>
+        
+                                    <div class="score_box">
+                                        <div class="flex">
+                                            <div class="score1 score">3</div>
+                                            <div class="score2 score">3</div>
+                                        </div>
+                                        <div class="pk_box">
+                                            <span>(</span>
+                                            <span class="pk1">2</span>
+                                            <span>PK</span>
+                                            <span class="pk2">1</span>
+                                            <span>)</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="team2 team_img">
+                                        <p class="team_name pc">法國</p>
+                                        <img src="images/a04.png" alt="team"/>                                            
+                                        <p class="team_name mo">法國</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
