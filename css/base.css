@@ -1260,22 +1260,90 @@ font-weight: 400;
         }
  }
     @media (max-width:1023px) {
-    .frame_box {
-        width:728px;
-        margin: 0 auto;
-    }
+        .record_section .record_box{
+            height: auto;
+            margin: 0 auto 16px  auto;
+        }
+        .record_section .record_box:nth-child(2n){
+            margin: 0 auto 16px  auto;
+            }
     }
     @media (max-width:767px) {
-    .frame_box {
+    /* .frame_box {
         width:414px;
         margin: 0 auto;
         padding:0 15px;
+    } */
+    .record_section .record_box .record_head p{ 
+        font-size: 20px;
     }
+    .record_section .record_box .record_head .num_box .box{
+        width: 40px;
+        font-size: 16px;
+    }
+    .record_section .record_box{
+        width: 100%;
+        height: auto;
+    }
+    .record_section .record_box .list .img{
+        display: none;
+    }
+    .record_section .record_box .list ul li .country_name{
+        text-align: left;
+        margin: 0;
+    }
+    .record_section .record_box .list ul li .num_box .box{
+        width: 40px;
+        font-weight: 400;
+        }
     }
     @media (max-width:414px) {
-        .frame_box {
+        /* .frame_box {
             width:100%;
             margin: 0 auto;        
+        } */
+        /*
+        .record_section .record_box .record_head .num_box .box{
+            width: 45px;
+            font-size: 16px;
         }
+        .record_section .record_box .list ul li .num_box .box{
+
+            font-size: 16px;
+            }*/
+    }
+    @media (max-width:390px) {
+        .record_section .record_box .record_head{
+            padding: 17px 6px 17px 6px;
+        
+        }
+        .record_section .record_box .list ul li{
+            padding: 15px 6px;
+        }
+        /* .record_section .record_box .list ul li .country_name{
+            font-size: 12px;
+        }
+        .record_section .record_box .list ul li .num_box .box{
+            width: 40px;
+            font-weight: 400;
+            font-size: 12px;
+            } */
+
+
+    }
+    @media (max-width:372px) {
+        .record_section .record_box .record_head .num_box .box{
+            width: 34px;
+            font-size: 14px;
+        }
+        .record_section .record_box .list ul li .country_name{
+            font-size: 12px;
+            width: auto;
+        }
+        .record_section .record_box .list ul li .num_box .box{
+            width: 34px;
+            font-weight: 400;
+            font-size: 13px;
+            }
     }
 /* 各組戰績  end*/
