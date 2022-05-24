@@ -129,14 +129,13 @@ a:hover .overlay-color {
 
 /* more*/
 .more_box a {
-    color:#220A26;
     background: url(../images/navigate_more.svg) no-repeat right;
     padding: 5px 25px 5px 10px;
     background-size:20px;
     display: block;
     float: right;
     font-size: 14px;
-    font-weight : 400;
+    font-weight : bold;
 }
 .more_box a:hover {
 }
@@ -156,7 +155,7 @@ a:hover .overlay-color {
     position: fixed;
     z-index: 2;
     right: 20px;
-    bottom: 40px;
+    bottom: 20px;
     transition: 0.5s;
     display:block;
     cursor: pointer;
@@ -208,8 +207,7 @@ a:hover .overlay-color {
     }
 }
 /*外框*/
-/* .container{max-width:1920px;margin:0 auto;font-weight: bold;} */
-.container{width:100%;margin:0 auto;font-weight: bold;}
+.container{max-width:1920px;margin:0 auto;font-weight: bold;}
 @media (max-width:1919px) {
     .container{width:100%;}
 }
@@ -221,11 +219,9 @@ header{position: relative;}
     width:100%;
     background-color:#461232;
 }
-.menu_fixed.act{width:100%;height:100vh;}
-.menu_fixed .clear{width:100%;height:100vh;background-color:rgba(0,0,0,0.8);display:none;position:absolute;z-index:-1;}
+.menu_fixed.act{width:100%;height:100vh;background-color:rgba(0,0,0,0.8);}
 .menu_fixed{position:fixed;top:0;left:0;z-index:100;width:100%;box-sizing: border-box;}
-.menu_bar{padding:15px 0;width:100%;margin:0 auto;background-color:#461232;}
-/* .menu_bar{padding:15px 0;max-width:1920px;margin:0 auto;background-color:#461232;} */
+.menu_bar{padding:15px 0;max-width:1920px;margin:0 auto;background-color:#461232;}
 .menu_bar h1{color:#fff;display:none;}
 @media (max-width:1919px) {
     .menu_bar{width:100%;}
@@ -260,7 +256,6 @@ header{position: relative;}
     .menu.mo .ham{width:30px;height:30px;}
     .menu.mo .frame_box{position: relative;}
     .menu.mo .list{width:90%;overflow-x:auto;display:flex;margin-right:10px;}
-    .menu.mo .list::-webkit-scrollbar {width:0px;height:0;}
     .menu.mo .list ul{white-space: nowrap;display:flex;text-align:justify;}
     .menu.mo .list li{margin-right:15px;position:relative;}
     .menu.mo .list li a{color: #B87486;font-size:18px;}
@@ -271,7 +266,8 @@ header{position: relative;}
     .menu.mo .list li.fb a{width:30px;height:30px;margin-right:15px;}
     .menu.mo .list li.fb{display:none;margin-bottom:0px;}   
 }
-@media (max-width:374px){    
+@media (max-width:359px){
+    .menu_bar .logo {margin-right: 30px;}
     .menu_bar h1 {font-size: 20px;}
 }
 
@@ -280,15 +276,14 @@ header{position: relative;}
 .good_box .title{
     width: 70px;height: 27px;
     background-color: #DA2F5A;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 5px;margin-right: 16px;
+    text-align: center;color: #fff;
+    letter-spacing: 5px;margin-right: 10px;
     -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
 }
 .good_box .title.flex{justify-content:center;}
 .good_box .title p{color:#fff;}
-.good_box .txt_box{width:90%;height:25px;white-space:nowrap;overflow: hidden;color:#220A26;font-size: 20px;font-weight: 500;}
+.good_box .txt_box{width:90%;height:25px;white-space:nowrap;overflow: hidden;}
 .good_box .txt{white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
 .good_box .txt_box.owl-theme .owl-controls{display:none;}
 @media (max-width:767px){
@@ -299,15 +294,10 @@ header{position: relative;}
 /*main*/
 /* 內文區塊 */
 .section {margin-bottom: 30px;}
-.section:nth-child(5) {margin-bottom: 60px;}
 .section .title{    
    width:100%;
    text-align: center;
    margin: 30px 0;
-   margin-top: 60px;
-}
-.section:nth-child(1) .title{
-    margin-top: 40px;
 }
 .section .title p{
     font-size: 28px;
@@ -332,10 +322,10 @@ header{position: relative;}
     background-color:#E8E6D9;
 }
 .section .schedule .head p{width:60px;margin-right:20px;color:#4E483A;}
-.section .schedule .head .time{text-align:center;width:120px;color:#4E483A;font-size:16px;font-weight:400 ;}
-.section .schedule .txt_box{padding:15px 5px 10px;text-align: center;font-size: 16px;font-weight: 500;}
+.section .schedule .head .time{text-align:center;width:120px;}
+.section .schedule .txt_box{padding:15px 5px 10px;text-align: center;font-size: 14px;}
 .section .schedule .txt_box.flex{justify-content:space-between;}
-.section .schedule .txt_box .team_img{width:80px;font-size:13px;font-weight: 500;color:#4E483A;}
+.section .schedule .txt_box .team_img{width:80px;font-size:13px;}
 .section .schedule .txt_box .team_img img{width:100%;}
 .section .schedule .score_box{margin:0 10px;}
 .section .schedule .score_box .score{
@@ -381,7 +371,7 @@ header{position: relative;}
 .section .vision .img{line-height:0;position:relative;width:100%;height:596px;}
 .section .vision h2{font-weight:500;margin: 0;}
 .section .vision .txt{
-width:100%;color:#fff;overflow:hidden;line-height:normal;text-align:center;padding:10px 16px 10px 16px; 
+width:100%;color:#fff;overflow:hidden;line-height:normal;text-align:center;padding:10px 0 10px 0; 
 position:absolute;bottom:0;z-index:1;font-size:26px;
 background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 35%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 35%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -396,7 +386,6 @@ font-size: 30px;font-weight: normal;
 .section .vision .txt p{
 width:90%;white-space:nowrap;
 display:inline-block;overflow:hidden;text-overflow: ellipsis;
-margin: 0 16px;
 }
 @media (max-width:1024px){
 .section .vision .txt h1{
@@ -469,12 +458,9 @@ top:40% !important;
 .section .team_icon ul{justify-content: space-between;}
 .section .team_icon li a{
     font-size:20px;
-    color:#B87486;padding:6px 24px;
+    color:#B87486;padding:3px 20px;
     border: 1px solid #B87486;
     border-radius: 30px;    
-}
-.section .team_icon li .index_group_active{
-    background-color:#F1DDDE;
 }
 .section .team_icon li a.act,.section .team_icon li a:hover{
     background-color:#F1DDDE;
@@ -498,7 +484,7 @@ top:40% !important;
     }
 }
 .section .team_list{color:#4E483A;}
-.section .team_list.flex{align-items: flex-start;margin-bottom: 9px;}
+.section .team_list.flex{align-items: flex-start;}
 .section .team_list ul{flex-wrap:wrap;}
 .section .team_listL{background-color:#fff;}
 .section .team_listL .head{
@@ -517,7 +503,7 @@ top:40% !important;
 .section .team_listL .c1{color:#881735;}
 .section .team_listR .head p{width:60px;margin-right:20px;}
 .section .team_listL{width:50%;background-color:#FFFFFF;margin-right:15px;}
-.section .team_listL .list li{border-bottom: 1px #F1DDDE solid;}
+.section .team_listL .list li{border-bottom: 1px #E8E6D9 solid;}
 .section .team_listR{width:50%;}
 .section .team_listR li{
     width: calc((100% - 20px)/2);
@@ -533,10 +519,10 @@ top:40% !important;
     background-color:#E8E6D9;    
 }
 .section .team_listR .head p{width:60px;margin-right:20px;}
-.section .team_listR .head .time{text-align:center;width:120px;color:#4E483A;font-size:16px;font-weight: 400;}
+.section .team_listR .head .time{text-align:center;width:120px;}
 .section .team_listR .txt_box{padding:15px 5px 10px;text-align: center;font-size: 14px;}
 .section .team_listR .txt_box.flex{justify-content: center;}
-.section .team_listR .txt_box .team_img{width:80px;color:#4E483A;font-size:13px;font-weight: 500;}
+.section .team_listR .txt_box .team_img{width:80px;font-size:13px;}
 .section .team_listR .txt_box .team_img img{width:100%;}
 .section .team_listR .score_box{margin:0 10px;}
 .section .team_listR .score_box .score{
@@ -569,7 +555,7 @@ top:40% !important;
     height: 161px;
     overflow: hidden;
     line-height: 0;
-    margin-bottom:8px;
+    margin-bottom:5px;
 }
 
 .section .team_pack .txt_box {
@@ -583,8 +569,7 @@ top:40% !important;
 }
 
 .section .team_pack .txt {
-    color:#220A26;
-    font-size: 20px;
+    font-size: 18px;
     overflow: hidden;
     height: 50px;
     line-height: 26px;
@@ -689,7 +674,7 @@ top:40% !important;
 .section .picture .img{line-height:0;position:relative;width:100%;height:675px;}
 .section .picture h3{font-weight:500;margin: 0;}
 .section .picture .txt{
-    width:100%;color:#fff;overflow:hidden;line-height:normal;text-align:center;padding:10px 0px 10px 0px; 
+    width:100%;color:#fff;overflow:hidden;line-height:normal;text-align:center;padding:10px 0 10px 0; 
     position:absolute;bottom:0;z-index:1;font-size:26px;
     background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 35%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 35%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -704,7 +689,6 @@ top:40% !important;
 .section .picture .txt p{
     width:90%;white-space:nowrap;
     display:inline-block;overflow:hidden;text-overflow: ellipsis;
-    margin: 0 16px;
 }
 @media (max-width:1199px) {
     .section .picture .img {height:551px;}
@@ -803,9 +787,7 @@ top:40% !important;
 .section .fifa_video .play{
     display:flex;align-items: center;
     font-size:14px;
-    color:#fff;position:absolute; right:12px;bottom:12px;
-    /* padding:15px 3px 15px 35px;  */
-    padding:18px 1.42px 18px 33.43px; 
+    color:#fff;position:absolute; right:12px;bottom:12px;padding:15px 3px 15px 35px; 
     background: url(../images/play_icon.svg) 8px center no-repeat; 
     background-color: rgba(124,23,44,0.6);
 }
@@ -815,7 +797,7 @@ top:40% !important;
     height: 217px;
     overflow: hidden;
     line-height: 0;
-    margin-bottom:8px;
+    margin-bottom:5px;
 }
 .section .fifa_video .txt_box {
     position: relative;
@@ -826,8 +808,7 @@ top:40% !important;
     font-weight: bold;
 }
 .section .fifa_video .txt {
-    color:#220A26;
-    font-size: 20px;
+    font-size: 18px;
     overflow: hidden;
     height: 50px;
     line-height: 26px;
@@ -910,14 +891,8 @@ top:40% !important;
     }
 }
 /* 影音放送ed*/
+
 /* 首頁 ed*/
-/* 賽程預告 */
-.schedule_notice{}
-.schedule_notice .nav{background-color:#fff;}
-.schedule_notice .nav ul{display:flex;align-items:center;justify-content:center;}
-.schedule_notice .nav li{}
-.schedule_notice .nav li a{font-size:24px;color:#7C174D;}
-/* 賽程預告 ed*/
 /* 內文區塊ed */
 /*main ed*/
 /*footer*/
