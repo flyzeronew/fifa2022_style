@@ -19,7 +19,7 @@ li {
 a:link,
 a:visited,
 a:active {
-    color: #000;
+    color: #220A26;
     text-decoration: none;
 }
 a {
@@ -156,7 +156,7 @@ a:hover .overlay-color {
     position: fixed;
     z-index: 2;
     right: 20px;
-    bottom: 40px;
+    bottom: 20px;
     transition: 0.5s;
     display:block;
     cursor: pointer;
@@ -333,9 +333,9 @@ header{position: relative;}
 }
 .section .schedule .head p{width:60px;margin-right:20px;color:#4E483A;}
 .section .schedule .head .time{text-align:center;width:120px;color:#4E483A;font-size:16px;font-weight:400 ;}
-.section .schedule .txt_box{padding:15px 5px 10px;text-align: center;font-size: 16px;font-weight: 500;}
+.section .schedule .txt_box{padding:15px 5px 10px;text-align: center;font-size: 16px;font-weight: 500;color:#4E483A;}
 .section .schedule .txt_box.flex{justify-content:space-between;}
-.section .schedule .txt_box .team_img{width:80px;font-size:13px;font-weight: 500;color:#4E483A;}
+.section .schedule .txt_box .team_img{width:80px;font-size:12px;font-weight: 500;color:#4E483A;}
 .section .schedule .txt_box .team_img img{width:100%;}
 .section .schedule .score_box{margin:0 10px;}
 .section .schedule .score_box .score{
@@ -498,7 +498,7 @@ top:40% !important;
     }
 }
 .section .team_list{color:#4E483A;}
-.section .team_list.flex{align-items: flex-start;margin-bottom: 9px;}
+.section .team_list.flex{align-items: flex-start;margin-bottom: 24px;}
 .section .team_list ul{flex-wrap:wrap;}
 .section .team_listL{background-color:#fff;}
 .section .team_listL .head{
@@ -510,6 +510,7 @@ top:40% !important;
 }
 .section .team_listL  p{text-align: center;width:120px;}
 .section .team_listL .list{font-size: 16px;font-weight:bold;}
+.section .team_listL .list p{font-weight:500;}
 .section .team_listL .list li,.section .team_listL .list .more_box1{padding:15px;overflow: hidden;align-items: center;}
 .section .team_listL .list li{display:flex;justify-content:space-between;}
 .section .team_listL .num_box{display:flex;}
@@ -524,6 +525,17 @@ top:40% !important;
     margin-right: 15px;margin-bottom: 15px;
     background-color:#FFFFFF;
 }
+.section .team_listR li .txt_box .score_box{
+    color:#4E483A;
+
+}
+@media screen and (min-width: 1585px) and (max-width:1920px) {
+    .section .team_listR li{
+        /* margin-bottom:0px;
+        color:purple; */
+        /* height: 100px; */
+    }
+}
 .section .team_listR .head.flex{ align-items:flex-start;}
 .section .team_listR li:nth-child(2n){margin-right:0;}
 .section .team_listR .head{
@@ -534,9 +546,9 @@ top:40% !important;
 }
 .section .team_listR .head p{width:60px;margin-right:20px;}
 .section .team_listR .head .time{text-align:center;width:120px;color:#4E483A;font-size:16px;font-weight: 400;}
-.section .team_listR .txt_box{padding:15px 5px 10px;text-align: center;font-size: 14px;}
+.section .team_listR .txt_box{padding:15px 5px 11.5px;text-align: center;font-size: 14px;}
 .section .team_listR .txt_box.flex{justify-content: center;}
-.section .team_listR .txt_box .team_img{width:80px;color:#4E483A;font-size:13px;font-weight: 500;}
+.section .team_listR .txt_box .team_img{width:80px;color:#4E483A;font-size:12px;font-weight: 500;}
 .section .team_listR .txt_box .team_img img{width:100%;}
 .section .team_listR .score_box{margin:0 10px;}
 .section .team_listR .score_box .score{
@@ -547,6 +559,15 @@ top:40% !important;
 .section .team_listR .score_box .score:last-child{margin-right:0;}
 .section .team_listR .pk_box{margin-top:5px;}
 .section .team_listR .pk_box .pk1,.section ..team_listR .pk_box .pk1{width:30px;height:30px;}
+@media (max-width:1199px){
+    .section .team_listL{width:40%;}
+    .section .team_listR{width:60%;}
+}
+@media (max-width:1023px){
+    .section .team_list.flex{display:block;}
+    .section .team_listL{margin-bottom:20px;}
+    .section .team_listL,.section .team_listR{width:100%;}    
+}
 @media (max-width:767px){
     .section .team_list.flex{display:block;}
     .section .team_listL{margin-bottom:20px;}
@@ -925,3 +946,122 @@ footer .logo_box li:first-child{width:80px;padding-top:0;margin-right:0;}
     footer small{font-size:12px!important;} 
 }
 /*footer ed*/
+
+/* 各組戰績 */
+.record_section{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.record_section .record_box .record_head{
+    /* align-items:flex-start; */
+    justify-content: space-between;
+    background-color: #E8E6D9;
+    padding: 17px 15px 17px 17px;
+
+}
+.record_section .record_box .record_head p{   
+    color:#FF8B17;
+    font-size: 24px;
+
+}
+.record_section .record_box{
+    width: 590px;
+    /* width: 49%; */
+    height: 392px;
+    margin-bottom: 16px;
+}
+.record_section .record_box:nth-child(2n){
+margin-left: 20px;
+}
+.record_section .record_box .record_head .num_box .box{
+    width: 50px;
+    /* width: 46px; */
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+
+}
+.record_section .record_box .record_head .num_box .c1{
+    color:#881735;
+    font-weight:bolder;
+}
+.record_section .record_box .list .list_L{
+display: flex;
+align-items: center;
+}
+.record_section .record_box .list .img{
+    width: 80px;
+
+}
+.record_section .record_box .list ul li{
+ display:flex ;
+ justify-content: space-between;
+ background-color: #fff;
+ border-bottom: solid 1px #F1DDDE;
+}
+.record_section .record_box .list ul li{
+    padding: 15px;
+}
+.record_section .record_box .list ul li .country_name{
+    font-weight: 500;
+    width: 122px;
+    text-align: center;
+    margin: 0 16px;
+}
+.record_section .record_box .list ul li .num_box{
+    display:flex ;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.record_section .record_box .list ul li .num_box .box{
+width: 50px;
+/* width: 46px; */
+text-align: center;
+font-weight: 400;
+}
+.record_section .record_box .list ul li .num_box .c1{
+    color:#881735;
+    font-weight:bolder;
+}
+
+@media (max-width:1199px) {
+    .record_section .record_box{
+        width: 480px;
+        height: auto;
+    }
+    .record_section .record_box .list .img{
+        width: 45px;
+    
+    }
+    .record_section .record_box .list ul li .country_name{
+        font-weight: 500;
+        width:90px;
+        margin: 0 8px;
+        font-size: 14px;
+    }
+    .record_section .record_box .list ul li .num_box .box{
+        /* width: px; */
+        }
+ }
+    @media (max-width:1023px) {
+    .frame_box {
+        width:728px;
+        margin: 0 auto;
+    }
+    }
+    @media (max-width:767px) {
+    .frame_box {
+        width:414px;
+        margin: 0 auto;
+        padding:0 15px;
+    }
+    }
+    @media (max-width:414px) {
+        .frame_box {
+            width:100%;
+            margin: 0 auto;        
+        }
+    }
+/* 各組戰績  end*/
