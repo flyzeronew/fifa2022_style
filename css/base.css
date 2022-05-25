@@ -310,8 +310,9 @@ header{position: relative;}
     margin-top: 40px;
 }
 .section .title p{
+    width:220px;
     font-size: 28px;
-    display:inline-block;margin: 0;color:#7C174D;padding:0px 50px;
+    display:inline-block;margin: 0;color:#7C174D;
     background: url(../images/title_bg.svg) center bottom no-repeat;
 }
 /* 首頁 */
@@ -1212,6 +1213,21 @@ top:40% !important;
     }
 }
 /* 小組賽程 ed*/
+
+/* 焦點新聞 */
+.foucs_news{}
+.foucs_news .title{}
+.foucs_news .title .tag{}
+.foucs_news .title .tag ul{display: flex;align-items: center;}
+.foucs_news .title .tag li{}
+.foucs_news .title .tag a{
+    font-size:20px;
+    color:#B87486;padding:5px 10px;
+    border: 1px solid #B87486;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+/* 焦點新聞 ed*/
 /* 內文區塊ed */
 /*main ed*/
 /*footer*/
