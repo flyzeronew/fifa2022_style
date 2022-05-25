@@ -178,15 +178,13 @@ a:hover,a:hover .txt_box .txt,a:hover .txt p{
 /*外框*/
 .frame_box {
     width: 1200px;
-    margin: 0 auto;
-    padding:0 20px ;
+    margin: 0 auto;  
     box-sizing: border-box;
 }
 @media (max-width:1199px) {
 .frame_box {
     width: 980px;
     margin: 0 auto;
-    padding:0;
 }
 }
 @media (max-width:1023px) {
@@ -791,7 +789,7 @@ font-size: 20px;}
     position: absolute;
     background-repeat: no-repeat !important;
     background-color: rgba(124,23,44,0.8) !important;
-    top:36% !important;
+    top:35% !important;
 }
 .section .picture_list .owl-next{right:0!important;background: url(../images/navigate_next.svg) center center no-repeat!important;background-color: rgba(124,23,44,0.8) !important;background-size:80% !important;}
 .section .picture_list .owl-prev{left:0!important;background: url(../images/navigate_before.svg) center center no-repeat!important;background-color: rgba(124,23,44,0.8) !important;background-size:80% !important;}
@@ -800,17 +798,18 @@ font-size: 20px;}
     .section .picture_list .img{
         height: 131px;
     }
-    .section .picture_list  .owl-next,.section .picture_list  .owl-prev{
-        width: 30px !important;
-        height: 30px !important;   
-        top:35% !important;
-    }
+
 }
 @media (max-width:767px) {
     .section .picture_list ul{width:120%;}
     .section .picture_list .owl-carousel{position:static!important;}
     .section .picture_list .img{
         height: 125px;
+    }
+    .section .picture_list  .owl-next,.section .picture_list  .owl-prev{
+        width: 30px !important;
+        height: 30px !important;   
+        top:35% !important;
     }
 } 
 @media (max-width:411px) {
@@ -971,10 +970,10 @@ font-size: 20px;}
 .schedule_notice .contest .title .icon{width: 30px;height:30px;}
 .schedule_notice .contest .list{color:#4E483A;display: none;font-weight:normal;}
 .schedule_notice .contest .list li{border-bottom: 1px #f5e6e8 solid;padding:10px 20px 10px 30px;}
-.schedule_notice .contest .list li .box{display:flex;align-items:center;padding:10px 20px 10px 30px;}
+.schedule_notice .contest .list li .box{display:flex;align-items:center;margin-left:10px;position: relative;}
 .schedule_notice .contest .list li:last-child{border-bottom: 0px #f5e6e8 solid;}
-.schedule_notice .time{margin-right:20%;font-size:20px;width:130px;}
-.schedule_notice .team_box{width:80%;display:flex;align-items:center;}
+.schedule_notice .time{font-size:20px;width:130px;position:absolute;}
+.schedule_notice .team_box{width:100%;display:flex;align-items:center;justify-content: center;}
 .schedule_notice .team_img{display:flex;align-items:center;justify-content:center;}
 .schedule_notice .team_img img{width:80px;}
 .schedule_notice .team_name{padding:0;width:150px;text-align: center;}
@@ -989,13 +988,18 @@ font-size: 20px;}
 .schedule_notice .score_box .pk_box{font-size: 16px;text-align: center;}
 .schedule_notice .score_box .score:last-child{margin-right:0;}
 @media (max-width:1199px) {
-    .schedule_notice .time {
-        margin-right: 15%;
+    .schedule_notice .team_box{width:100%;display:flex;align-items:center;justify-content: center;}
+    .schedule_notice .time {       
         font-size: 20px;
         width: 130px;
     }
 }
 @media (max-width:1023px) {
+    .schedule_notice .contest .list li .box {
+        display:block;
+        margin-left: 0px;
+    }
+    .schedule_notice .time{position:relative;margin: 0 auto 20px;text-align: center;}
     .schedule_notice .contest .title .txt.bg {        
         padding: 15px 70px 10px 20px;
     }
@@ -1007,7 +1011,6 @@ font-size: 20px;}
         width: 130px;
     }
     .schedule_notice .time {
-        margin-right: 8%;
         font-size: 16px;
         width: 120px;
     }
@@ -1103,15 +1106,24 @@ font-size: 20px;}
 }
 .schedule_notice .team_play ul:nth-child(2){display:none;}
 .schedule_notice .team_play li{
+    position: relative;
     display:flex;align-items:center;
     border-bottom: 1px #f5e6e8 solid;padding:15px 30px;
 }
+.schedule_notice .team_play .type_box{position:absolute;}
 .schedule_notice .team_play .type,.schedule_notice .team_play .time{
-    font-size: 20px;
+    font-size: 20px;display:inline-block;vertical-align:middle;
 }
+.schedule_notice .team_play .type{margin-top:13px;margin-right: 50px;}
 .schedule_notice .team_play .time{width: 130px;font-weight: normal;}
-.schedule_notice .team_play .type,.schedule_notice .team_play .time{margin-right:6%;}
-.schedule_notice .team_play .team_box{width:auto;}
+.schedule_notice .team_play .type,.schedule_notice .team_play .time{}
+.schedule_notice .team_play .team_box{width:100%;}
+@media (max-width:1199px) {
+    .schedule_notice .team_play li{display:block;}
+    .schedule_notice .team_play .type_box{position:relative;width:100%;margin-bottom:30px;display:flex;align-items:center;}
+    .schedule_notice .team_play .type{margin: 0;}
+    .schedule_notice .team_play .time{width:130px;margin:0 auto;display: block;}
+}
 @media (max-width:1023px) {
     .schedule_notice .team_tag .name {
         font-size: 20px;
@@ -1126,7 +1138,6 @@ font-size: 20px;}
     .schedule_notice .team_play .time {width: 100px;}
     .schedule_notice .team_play li{padding:15px 20px;}
     .schedule_notice .team_play .type, .schedule_notice .team_play .time {font-size: 16px;}
-    .schedule_notice .team_play .type,.schedule_notice .team_play .time{margin-right:15px;}
 }
 @media (max-width:767px) {
     .schedule_notice .team_play li {
@@ -1137,8 +1148,6 @@ font-size: 20px;}
     .schedule_notice .team_play .time {
         width: 100px;display:inline-block;vertical-align: middle;margin-bottom: 0;
     }
-    .schedule_notice .team_play .type, .schedule_notice .team_play .time {margin-right: 0;}
-    .schedule_notice .team_play .type {margin-right: 20%;}
     .schedule_notice .nav {
         background-color: #fff;
         margin: 30px 0 15px;
@@ -1158,14 +1167,10 @@ font-size: 20px;}
     .schedule_notice .team_play .team_box{margin-top:20px;}
 }
 @media (max-width:411px) {
-    .schedule_notice .team_play .type {
-        margin-right: 15%;
-    }
+
 }
 @media (max-width:359px) {
-    .schedule_notice .team_play .type {
-        margin-right: 10%;
-    }
+
 }
 /* 球隊賽程 ed*/
 
