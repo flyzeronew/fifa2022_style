@@ -89,12 +89,12 @@ h1,h2,h3{padding:0;margin: 0;}
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url(../images/img_vedio_player_midium_M.svg) no-repeat center center;
-    background-size:40px;
+    background: url(../images/play_circle.png) no-repeat center center;
+    background-size:80px;
 }
 @media (max-width:1023px) {
     .list_play {
-        background: url(../images/img_vedio_player_midium_M.svg) no-repeat center center;
+        background: url(../images/play_circle.png) no-repeat center center;
         background-size:30px;
     }
 }
@@ -179,12 +179,14 @@ a:hover,a:hover .txt_box .txt,a:hover .txt p{
 .frame_box {
     width: 1200px;
     margin: 0 auto;
+    padding:0 20px ;
     box-sizing: border-box;
 }
 @media (max-width:1199px) {
 .frame_box {
     width: 980px;
     margin: 0 auto;
+    padding:0;
 }
 }
 @media (max-width:1023px) {
@@ -329,13 +331,14 @@ header{position: relative;}
 .section .schedule .head.flex{ align-items:flex-start;}
 .section .schedule li:last-child{margin-right:0;}
 .section .schedule .head{
+    position: relative;
     font-size: 16px;
     font-weight:bold;
     padding:10px;
     background-color:#E8E6D9;
 }
-.section .schedule .head p{width:60px;margin-right:20px;color:#4E483A;}
-.section .schedule .head .time{text-align:center;width:120px;color:#4E483A;font-size:16px;font-weight:400 ;}
+.section .schedule .head p{width:60px;color:#4E483A;position:absolute;}
+.section .schedule .head .time{text-align:center;width:120px;color:#4E483A;font-size:16px;font-weight:400;margin:0 auto;}
 .section .schedule .txt_box{padding:15px 5px 10px;text-align: center;font-size: 16px;font-weight: 500;color:#4E483A;}
 .section .schedule .txt_box.flex{justify-content:center;}
 .section .schedule .txt_box .team_img{width:80px;font-size:12px;font-weight: 500;color:#4E483A;}
@@ -354,13 +357,13 @@ header{position: relative;}
         flex-wrap:wrap;
     }
     .section .schedule li {
-        width: calc((100% - 25px)/2);
+        width: calc((100% - 15px)/2);
         background-color: #FFFFFF;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+        margin-right: 15px;
     }
     .section .schedule .txt_box.flex{padding:20px;justify-content:space-between;}
-    .section .schedule .head .time{margin-left:15%;}
-    .section .schedule li:last-child{margin-right:25px;}
+    .section .schedule li:last-child{margin-right:15px;}
     .section .schedule li:nth-child(2n){margin-right:0;}
 }
 @media (max-width:767px){
@@ -373,9 +376,7 @@ header{position: relative;}
     }
     .section .schedule li{margin-right:0;}
     .section .schedule li:last-child{margin-bottom: 0;}
-    .section .schedule .head .time {
-        margin-left: 8%;
-    }
+
 }
 /* 主視覺*/
 .section li{list-style:none;}
@@ -427,13 +428,13 @@ font-size: 20px;}
     margin-top:5px;
 }
 .section .vision  .owl-next,.section .vision  .owl-prev{   
-width: 60px !important;
-height: 60px !important;
-position: absolute;
-background-repeat: no-repeat !important;
-background-color: rgba(124,23,44,0.8) !important;
-top:40% !important;
-}	
+    width: 60px !important;
+    height: 60px !important;
+    position: absolute;
+    background-repeat: no-repeat !important;
+    background-color: rgba(124,23,44,0.8) !important;
+    top:45% !important;
+}
 .section .vision .owl-next{right:0!important;background: url(../images/navigate_next.svg) center center no-repeat!important;background-color: rgba(124,23,44,0.8) !important;background-size:80% !important;}
 .section .vision .owl-prev{left:0!important;background: url(../images/navigate_before.svg) center center no-repeat!important;background-color: rgba(124,23,44,0.8) !important;background-size:80% !important;}
 .section .vision .owl-dots{display:none!important;}
@@ -442,16 +443,15 @@ top:40% !important;
 .section .vision{width:100%;margin:0 auto 30px;}    
 .section .vision .img{height:534px;}
 .section .vision .txt{font-size: 24px;}
-.section .vision .owl-prev,.section .vision .owl-next{top:45% !important;width:50px!important;height: 50px !important;}
+.section .vision .owl-prev,.section .vision .owl-next{width:50px!important;height: 50px !important;}
 }
 @media (max-width:1023px){
 .section .vision .img{height:392px;}	
-.section .vision .owl-prev,.section .vision .owl-next{top:40% !important;}
 }
 @media (max-width:767px){
 .section .vision .txt{font-size:20px;}	
 .section .vision .img{height:216px;}	
-.section .vision .owl-prev,.section .vision .owl-next{top:30% !important;width:40px!important;height: 40px !important;}
+.section .vision .owl-prev,.section .vision .owl-next{top:45% !important;width:30px!important;height: 30px !important;}
 }
 @media (max-width:431px){
 .section .vision .vision .img{height:216px;}
@@ -460,10 +460,10 @@ top:40% !important;
 .section .vision .img{height:194px;}
 }
 @media (max-width:374px){
+.section .vision .owl-prev,.section .vision .owl-next{top:40% !important;}
 .section .vision .img{height:186px;}	
 }
 @media (max-width:359px){
-.section .vision .owl-prev,.section .vision .owl-next{top:25% !important;width:40px!important;height: 40px !important;}	
 .section .vision .img{height:163px;}	
 }
 /* 主視覺ed*/
@@ -496,19 +496,29 @@ top:40% !important;
         text-align: center;
     }
     .section .team_icon li a{
-        font-size:16px;
+        font-size:20px;
         color:#B87486;padding:3px 20px;
         border: 1px solid #B87486;
         border-radius: 30px;    
     }
+}
+@media (max-width:411px){
+    .section .team_icon li a{
+        font-size:18px;
+        color:#B87486;padding:3px 20px;
+        border: 1px solid #B87486;
+        border-radius: 30px;    
+    }
+}
+@media (max-width:359px){
+    .section .team_icon li a{font-size:16px;padding:3px 15px;}
 }
 .section .team_list{color:#4E483A;}
 .section .team_list.flex{align-items: flex-start;margin-bottom:15px;}
 .section .team_list ul{flex-wrap:wrap;}
 .section .team_listL{background-color:#fff;}
 .section .team_listL .head{
-    font-size: 16px;
-    font-weight:bold;
+    font-size: 16px; 
     padding:21px 15px 21px 15px;
     background-color:#E8E6D9;
     justify-content:space-between;
@@ -518,10 +528,10 @@ top:40% !important;
 .section .team_listL .list p{font-weight:500;}
 .section .team_listL .list li,.section .team_listL .list .more_box1{padding:15px;overflow: hidden;align-items: center;}
 .section .team_listL .list li{display:flex;justify-content:space-between;}
-.section .team_listL .num_box{display:flex;}
+.section .team_listL .num_box{display:flex;font-weight: normal;}
 .section .team_listL .box{width:50px;text-align: center;}
-.section .team_listL .c1{color:#881735;}
-.section .team_listR .head p{width:60px;margin-right:20px;}
+.section .team_listL .c1{color:#881735;font-weight:bold;}
+.section .team_listR .head p{width:60px;}
 .section .team_listL{width:50%;background-color:#FFFFFF;margin-right:15px;}
 .section .team_listL .list li{border-bottom: 1px #F1DDDE solid;}
 .section .team_listR{width:50%;}
@@ -534,23 +544,20 @@ top:40% !important;
     color:#4E483A;
 
 }
-@media screen and (min-width: 1585px) and (max-width:1920px) {
-    .section .team_listR li{
-        /* margin-bottom:0px;
-        color:purple; */
-        /* height: 100px; */
-    }
-}
-.section .team_listR .head.flex{ align-items:flex-start;}
+.section .team_listR .head.flex{align-items:flex-start;}
 .section .team_listR li:nth-child(2n){margin-right:0;}
 .section .team_listR .head{
+    position: relative;
     font-size: 16px;
     font-weight:bold;
     padding:10px;
     background-color:#E8E6D9;    
 }
-.section .team_listR .head p{width:60px;margin-right:20px;}
-.section .team_listR .head .time{text-align:center;width:120px;color:#4E483A;font-size:16px;font-weight: 400;}
+.section .team_listR .head p{width:60px;position:absolute;}
+.section .team_listR .head .time{
+    text-align:center;width:120px;color:#4E483A;font-size:16px;font-weight: 400;
+    margin:0 auto;
+}
 .section .team_listR .txt_box{padding:15px 5px 11.5px;text-align: center;font-size: 14px;}
 .section .team_listR .txt_box.flex{justify-content: center;}
 .section .team_listR .txt_box .team_img{width:80px;color:#4E483A;font-size:12px;font-weight: 500;}
@@ -599,7 +606,7 @@ top:40% !important;
 .section .team_pack .time {padding: 0;}
 .section .team_pack .img {
     width: 100%;
-    height: 161px;
+    height: 156px;
     overflow: hidden;
     line-height: 0;
     margin-bottom:8px;
@@ -740,6 +747,7 @@ top:40% !important;
     margin: 0 16px;
 }
 @media (max-width:1199px) {
+    .section .picture .txt{font-size:24px;}
     .section .picture .img {height:551px;}
 }
 @media (max-width:1023px) {
@@ -755,7 +763,7 @@ top:40% !important;
 }
 .section .picture_list .img {
     width: 100%;
-    height: 161px;
+    height: 157px;
     overflow: hidden;
 }
 .section .picture_list li:nth-child(4n){margin-right:0;}
@@ -783,7 +791,7 @@ top:40% !important;
     position: absolute;
     background-repeat: no-repeat !important;
     background-color: rgba(124,23,44,0.8) !important;
-    top:35% !important;
+    top:36% !important;
 }
 .section .picture_list .owl-next{right:0!important;background: url(../images/navigate_next.svg) center center no-repeat!important;background-color: rgba(124,23,44,0.8) !important;background-size:80% !important;}
 .section .picture_list .owl-prev{left:0!important;background: url(../images/navigate_before.svg) center center no-repeat!important;background-color: rgba(124,23,44,0.8) !important;background-size:80% !important;}
@@ -792,17 +800,17 @@ top:40% !important;
     .section .picture_list .img{
         height: 131px;
     }
-    .section .picture_list  .owl-next,.section .picture_list  .owl-prev{   
-        width: 35px !important;
-        height: 35px !important;
-        top:40% !important;
+    .section .picture_list  .owl-next,.section .picture_list  .owl-prev{
+        width: 30px !important;
+        height: 30px !important;   
+        top:35% !important;
     }
 }
 @media (max-width:767px) {
     .section .picture_list ul{width:120%;}
     .section .picture_list .owl-carousel{position:static!important;}
     .section .picture_list .img{
-        height: 136px;
+        height: 125px;
     }
 } 
 @media (max-width:411px) {
@@ -819,9 +827,6 @@ top:40% !important;
     }
 }
 @media (max-width:359px) {
-    .section .picture_list  .owl-next,.section .picture_list  .owl-prev{   
-        top:30% !important;
-    }
     .section .picture_list .img{
         height: 94px;
     }
@@ -845,7 +850,7 @@ top:40% !important;
 .section .fifa_video .play p{margin-right:10px;}
 .section .fifa_video .img {
     width: 100%;position: relative;
-    height: 217px;
+    height: 210px;
     overflow: hidden;
     line-height: 0;
     margin-bottom:8px;
@@ -1227,8 +1232,8 @@ top:40% !important;
 
 /* 焦點新聞 */
 .focus_news{}
-.focus_news .title{}
-.focus_news .tag{overflow: hidden;padding:10px 0 20px;}
+.focus_news .tag_bar{margin-bottom:20px;}
+.focus_news .tag{overflow: hidden;padding:10px 0 ;margin-bottom:5px;}
 .focus_news .tag ul{display: flex;align-items: center;justify-content: center;}
 .focus_news .tag a{
     font-size:20px;
@@ -1237,9 +1242,103 @@ top:40% !important;
     border-radius: 30px;
     margin-right: 20px;
 }
-.focus_news .tag a.act,.focus_news .tag a:hover{
+.focus_news .tag li.act a,.focus_news .tag a:hover{
     border: 1px solid #F1DDDE;
     background-color:#F1DDDE;
+}
+.focus_news .list{margin-bottom:15px;}
+.focus_news .list ul{display:flex;flex-wrap: wrap;}
+.focus_news .list li{
+    width: calc((100% - 60px)/4);
+    margin-right:20px;margin-bottom:20px;
+}
+.focus_news .list li:nth-child(4n){margin-right:0px;}
+.focus_news .list .img{margin-bottom:5px;height:155px;}
+.focus_news .txt {
+    color:#000;
+    font-size: 20px;
+    overflow: hidden;
+    height: 50px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+.focus_news .time {
+    text-align:right;
+    color:#4E483A;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+@media (max-width:1199px) {
+    .focus_news .list .img {
+        height: 129px;
+    }
+    .focus_news .list li {
+        margin-right:15px;
+        width: calc((100% - 50px)/4);
+    }
+}
+
+@media (max-width:1023px) {
+    .focus_news .list .img {
+        height: 91px;
+        margin-bottom:5px;
+    }
+    .focus_news .list .txt {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .focus_news .list li {
+        width: calc((100% - 50px)/4);
+    }
+}
+
+@media (max-width:767px) {
+    .focus_news .list .list_play{background-size:40px;}
+    .focus_news .list li {width:100%;}
+    .focus_news .list li a{display: flex;}
+    .focus_news .list .img {
+        width:40%;
+        height: 83px;
+        margin-right: 15px;
+        margin-bottom:0;
+    }
+    .focus_news .list .txt_box {
+        width:60%;
+    }
+    .focus_news .list ul {
+        display:block;
+    }
+    
+    .focus_news .list li:nth-child(2n) {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:411px) {
+    .focus_news .list .img {
+        height: 93px;
+    }
+}
+
+@media (max-width:374px) {
+    .focus_news .list .img {
+        height:89px;
+    }
+}
+
+@media (max-width:359px) {
+    .focus_news .list .img {
+        height:77px;
+    }
+    .focus_news .list .article_time {
+        font-size: 12px;
+    }
 }
 /* 焦點新聞 ed*/
 /* 內文區塊ed */
