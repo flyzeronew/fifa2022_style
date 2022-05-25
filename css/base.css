@@ -1106,23 +1106,21 @@ font-size: 20px;}
 }
 .schedule_notice .team_play ul:nth-child(2){display:none;}
 .schedule_notice .team_play li{
-    position: relative;
     display:flex;align-items:center;
+    position: relative;
     border-bottom: 1px #f5e6e8 solid;padding:15px 30px;
 }
-.schedule_notice .team_play .type_box{position:absolute;}
-.schedule_notice .team_play .type,.schedule_notice .team_play .time{
-    font-size: 20px;display:inline-block;vertical-align:middle;
-}
-.schedule_notice .team_play .type{margin-top:13px;margin-right: 50px;}
-.schedule_notice .team_play .time{width: 130px;font-weight: normal;}
-.schedule_notice .team_play .type,.schedule_notice .team_play .time{}
-.schedule_notice .team_play .team_box{width:100%;}
+.schedule_notice .team_play .type_box{position:absolute;display:flex;align-items:center;justify-content: center;}
+.schedule_notice .team_play .type1,.schedule_notice .team_play .time1{font-size: 20px;}
+.schedule_notice .team_play .type1{margin-right: 50px;}
+.schedule_notice .team_play .time1{width: 130px;font-weight: normal;}
+.schedule_notice .team_play .team_box{width:100%;font-weight: normal;}
 @media (max-width:1199px) {
+    .schedule_notice .team_play .type_box{position:relative;margin-bottom: 30px;}
+    .schedule_notice .team_play .type1{position:absolute;margin-right:0;left:0;}
+    .schedule_notice .team_play .time1{text-align: center;}
     .schedule_notice .team_play li{display:block;}
-    .schedule_notice .team_play .type_box{position:relative;width:100%;margin-bottom:30px;display:flex;align-items:center;}
-    .schedule_notice .team_play .type{margin: 0;}
-    .schedule_notice .team_play .time{width:130px;margin:0 auto;display: block;}
+    
 }
 @media (max-width:1023px) {
     .schedule_notice .team_tag .name {
@@ -1137,15 +1135,15 @@ font-size: 20px;}
     .schedule_notice .score_box .flex {margin-bottom: 5px;}
     .schedule_notice .team_play .time {width: 100px;}
     .schedule_notice .team_play li{padding:15px 20px;}
-    .schedule_notice .team_play .type, .schedule_notice .team_play .time {font-size: 16px;}
+    .schedule_notice .team_play .type1, .schedule_notice .team_play .time1 {font-size: 16px;}
 }
 @media (max-width:767px) {
     .schedule_notice .team_play li {
         display: block;
         padding: 20px;
     }
-    .schedule_notice .team_play .type {display:inline-block;vertical-align: middle;}
-    .schedule_notice .team_play .time {
+    .schedule_notice .team_play .type1 {display:inline-block;vertical-align: middle;}
+    .schedule_notice .team_play .time1 {
         width: 100px;display:inline-block;vertical-align: middle;margin-bottom: 0;
     }
     .schedule_notice .nav {
@@ -1163,15 +1161,12 @@ font-size: 20px;}
     .schedule_notice .team_tag .tag {   
         overflow-x: auto;
         white-space: nowrap;
+        
     }
+    .schedule_notice .team_tag .tag::-webkit-scrollbar {width:0;height:0;}
     .schedule_notice .team_play .team_box{margin-top:20px;}
 }
-@media (max-width:411px) {
 
-}
-@media (max-width:359px) {
-
-}
 /* 球隊賽程 ed*/
 
 /* 小組賽程 */
@@ -1183,38 +1178,39 @@ font-size: 20px;}
 .schedule_notice .team_group_title .list .img{width:40px;height:25px;border: 1px solid #4E483A;margin:0 auto 5px;}
 .schedule_notice .team_group_title .list .txt{font-size: 14px;}
 .schedule_notice .team_group li{
-    display:flex;align-items:center;
-    border-bottom: 1px #f5e6e8 solid;padding:15px 30px;
+    position: relative;
+    display:flex;align-items:center;justify-content:center;
+    border-bottom: 1px #f5e6e8 solid;padding:15px 30px;box-sizing: border-box;
 }
-.schedule_notice .team_group .type,.schedule_notice .team_group .time{
-    font-size: 20px;
+.schedule_notice .team_group .time{
+    font-size: 20px;position:absolute;left:30px;
 }
 .schedule_notice .team_group .time{width: 130px;font-weight: normal;}
-.schedule_notice .team_group .type,.schedule_notice .team_group .time{margin-right:15%;}
-.schedule_notice .team_group .team_box{width:auto;}
+.schedule_notice .team_group .team_box{width:auto;font-weight: normal;}
 @media (max-width:1023px) {
+    
     .schedule_notice .team_tag .name {
         font-size: 20px;
         margin-right: 20px;
     }
     .schedule_notice .score_box .flex {margin-bottom: 5px;}
-    .schedule_notice .team_group .time {width: 100px;}
-    .schedule_notice .team_group li{padding:15px 20px;}
-    .schedule_notice .team_group .type, .schedule_notice .team_group .time {font-size: 16px;}
-    .schedule_notice .team_group .type,.schedule_notice .team_group .time{margin-right:15px;}
+    .schedule_notice .team_group li{padding:15px 20px;display:block;}
+    .schedule_notice .team_group .time {
+        font-size: 16px;width:100px;position: relative;left:auto;margin:0 auto 30px;
+    }
+    
 }
 @media (max-width:767px) {
     .schedule_notice .team_group li {
         display: block;
         padding: 20px;
     }
-    .schedule_notice .team_group .type {display:inline-block;vertical-align: middle;}
+    
     .schedule_notice .team_group .time {
         width: 100px;display:inline-block;vertical-align: middle;margin-bottom: 0;
     }
-    .schedule_notice .team_group .type, .schedule_notice .team_group .time {margin-right: 0;}
-    .schedule_notice .team_group .time{margin:0 auto;display:block;}
-    .schedule_notice .team_group .type {margin-right: 20%;}
+    .schedule_notice .team_group .time {margin-right: 0;}
+    .schedule_notice .team_group .time{margin:0 auto;display:block;}    
     .schedule_notice .nav {
         background-color: #fff;
         margin: 30px 0 15px;
@@ -1223,16 +1219,7 @@ font-size: 20px;}
     .schedule_notice .team_group_title {margin-bottom:10px;}
     .schedule_notice .team_group .team_box{margin-top:20px;}
 }
-@media (max-width:411px) {
-    .schedule_notice .team_group .type {
-        margin-right: 15%;
-    }
-}
-@media (max-width:359px) {
-    .schedule_notice .team_group .type {
-        margin-right: 10%;
-    }
-}
+
 /* 小組賽程 ed*/
 
 /* 焦點新聞 */
