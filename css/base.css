@@ -178,15 +178,13 @@ a:hover,a:hover .txt_box .txt,a:hover .txt p{
 /*外框*/
 .frame_box {
     width: 1200px;
-    margin: 0 auto;
-    padding:0 20px ;
+    margin: 0 auto;  
     box-sizing: border-box;
 }
 @media (max-width:1199px) {
 .frame_box {
     width: 980px;
     margin: 0 auto;
-    padding:0;
 }
 }
 @media (max-width:1023px) {
