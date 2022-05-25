@@ -1,0 +1,388 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">	
+<title>2022世界盃足球賽</title>
+<meta name="Keywords" content="">
+<meta name="description" content="">
+<link rel="icon" href="" type="image/icon">
+
+<!--共用CSS-->
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/base.css" media="screen">
+<!--共用CSSed-->
+
+<!--外掛CSS Link-->
+<link rel="stylesheet" href="css/owlcarousel/owl.carousel.css">
+<link rel="stylesheet" href="css/owlcarousel/owl.theme.css">
+<link rel="stylesheet" href="css/owlcarousel/demo.css">
+<!--外掛CSS Link ed-->
+	
+<!--外掛 js Link-->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/jaliswall.js"></script>
+<!--外掛 js Link ed-->
+
+<!--js Link-->
+<script type="text/javascript" src="js/js01.js"></script>
+<!--js Link ed-->
+
+<!--本頁樣式-->
+<style>
+    .aaa::before{content:"G";}
+</style>
+<!--本頁樣式ed-->
+<!--本頁js-->	
+<script type="text/javascript">
+$(document).ready(function(){
+
+// 輪播-快訊
+    $('.good_box .txt_box').owlCarousel({
+        URLhashListener:true,
+        startPosition:'URLHash',
+        animateIn: 'fadeInDown',
+        lazyContent:true,
+        items:1,
+        loop:true,
+        nav:false,
+        margin:0,
+        autoplay:true,
+        smartSpeed:800,
+        autoplayTimeout:3000,
+        autoplayHoverPause:false,
+        navText:['',''],
+    });
+// 輪播-頭條
+    $('.vision ul').owlCarousel({
+        items:1,
+        loop:true,
+        nav:true,
+        margin:0,smartSpeed:800,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        navText:['',''],
+        video:true,
+    });
+
+    // 輪播-圖輯
+    $('.picture_list ul').owlCarousel({
+        items:4,
+        loop:true,
+        nav:true,
+        margin:15,smartSpeed:800,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        navText:['',''],
+        video:true,
+        responsive: {
+            0: {
+            items:2
+            },
+            360: {
+            items:2
+            },
+            768: {
+            items:3
+            },
+            1024: {
+            items:4
+            }
+        }
+    });    
+// 輪播
+// 漢堡按鈕
+    $(window).resize(function(){
+        if($(this).width()>767){
+            hamCancel();
+        }
+    });
+    $('.menu_fixed .clear').click(function(){hamCancel();});
+    $('.ham').click(function(){
+        $(this).toggleClass('op');
+        if($(this).hasClass('op')){
+            $(this).css({
+                transform:'rotate(180deg)',
+                translation:'0.3s',
+                position:'absolute',                
+                right:'15px',top:0
+            });
+            hamGo();
+        }else{
+            hamCancel();
+        }
+    });
+    function hamGo(){    
+        $('html').css({'overflow-y': 'hidden'});
+        $('.menu.mo .list ul').css({'white-space':'normal',display:'block'});
+        $('.menu.mo .list').css({
+            'overflow': 'hidden',
+            width:'100%',
+            'padding':'35px 0 0 0'
+        });
+        $('.menu.mo .list li').css({                                
+            display:'inline-block',
+            'margin-right':'15px',
+            'margin-bottom':'20px',
+        });            
+        
+        $('.menu.mo .fb').css({display:'inline-block','margin':'0'});
+        $('.menu.mo .flex').css({display:'block'});
+        $('.menu_fixed .clear').show();
+    }
+    function hamCancel(){
+        $('.ham').css({
+            transform:'rotate(0deg)',
+            translation:'0.3s',
+            position:'relative',                
+            right:0,top:0
+        });
+        $('html').css({'overflow-y': 'auto'});
+        $('.menu.mo .list ul').css({'white-space':'nowrap',display:'flex'});
+        $('.menu.mo .list').css({
+            'overflow-x': 'auto',
+            width:'90%',
+            'padding-top':'0px'
+        });
+        $('.menu.mo .list li').css({
+            display:'block',
+            'margin-right':'15px',
+            'margin-bottom':'0px',
+        }); 
+        $('.menu.mo .fb').css({display:'none'});
+        $('.menu.mo .flex').css({display:'flex'});
+        $('.menu_fixed .clear').hide();
+        $('.ham').removeClass('op');
+    }
+});
+
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.wall').jaliswall({ item: '.pubu' });
+    
+       // $('html').css({ 'overflow-y': 'hidden' });
+        $('.pic_light_box .xx').click(function(){
+            $('.pic_light_box').hide();
+            $('html').css({ 'overflow-y': 'auto' });
+        });
+    });
+    </script>
+
+<!--本頁js ed-->		
+</head>
+<body>    
+<!--container主架構-->
+<!--GO~Top-->
+<div id="back"> 
+<div id="back-img1"><img src="images/gotop.svg" alt="top"/></div>
+</div>
+<!--GO~Top end-->
+<div class="container">
+<!--header -->
+<header>
+
+    <div class="header_view">
+        <div class="menu_fixed">            
+            <div class="clear"></div>
+            <div class="menu_bar">
+                <div class="frame_box flex">
+                    <div class="logo"><a href="https://news.tvbs.com.tw/" target="_blank" ><img src="images/TVBS_Logo.svg" alt="logo"/></a></div>
+                    <h1>2022世界盃足球賽</h1>
+                    <div class="menu">
+                        <ul class="flex">
+                            <li class="act"><a href="index.html">首頁</a></li>
+                            <li><a href="schedule.html">賽程預告</a></li>
+                            <li><a href="##">各組戰績</a></li>
+                            <li><a href="##">焦點新聞</a></li>
+                            <li><a href="##">精彩瞬間</a></li>
+                            <li><a href="##">世足影音</a></li>
+                            <li><a href="##">下載APP</a></li>
+                            <li><a href="##">預留欄位</a></li>
+                            <li><a href="##">預留欄位</a></li>
+                        </ul>
+                    </div>
+                    <div class="community">
+                        <ul class="flex">
+                            <li><a href="##"><img src="images/img_Facebook_TVBS.svg" alt="fb"/></a></li>
+                            <li><a href="##"><img src="images/img_Line_TVBS.svg" alt="line"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 手機版 -->                
+                <div class="menu mo">
+                    <div class="frame_box">
+                        <div class="flex">
+                            <div class="list">
+                                <ul>
+                                    <li class="act"><a href="##">首頁</a></li>
+                                    <li><a href="##">賽程預告</a></li>
+                                    <li><a href="##">各組戰績</a></li>
+                                    <li><a href="##">焦點新聞</a></li>
+                                    <li><a href="##">精彩瞬間</a></li>
+                                    <li><a href="##">世足影音</a></li>
+                                    <li><a href="##">下載APP</a></li>
+                                    <li><a href="##">預留欄位</a></li>
+                                    <li><a href="##">預留欄位</a></li>
+                                    <li class="fb">
+                                        <div class="img">
+                                            <a href="##"><img src="images/img_Facebook_TVBS.svg" alt="fb"/></a>
+                                            <a href="##"><img src="images/img_Line_TVBS.svg" alt="fb"/></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ham"><a href="##"><img src="images/ham.svg" alt="img"/></a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+           
+            <!-- 手機版 ed-->
+        </div>
+        <div class="pc"><img src="images/header_view.jpg" alt="view"/></div>
+
+    </div>
+    <div class="good_box">
+        <div class="frame_box flex">
+            <div class="title flex"><p>快訊</p></div>
+            <div class="txt_box">
+                <div class="txt"><a href="##">《奬金50萬》臺中原創音樂大賽　報名至5/14中午12點止。</a></div>
+                <div class="txt"><a href="##">東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS東奧看TVBS</a></div>                   
+            </div>
+        </div>
+    </div>
+</header>
+<!--header ed-->
+<!--main-->
+<main>
+    <article>
+        <div class="frame_box">
+            <div class="article_wonderful">
+                <div class="pic_box">
+                    <div class="wall">
+                        <div class="pubu">
+                            <div class="img">
+                                <div class="overlay-color"></div>
+                                <img src="images/fifa2022-1.jpg" alt="img">
+                            </div>
+                            <div class="txt_box">
+                                <h2>日本緊急事態擴大仍辦奧運 日本緊急事 態擴大仍辦奧運日本緊急事態擴大仍辦奧運 日本緊急事 態擴大仍辦奧運</h2>
+                                <div class="article_time">2020/12/09 14:24</div>
+                            </div>
+                        </div>
+
+                        <div class="pubu">
+                            <div class="img">
+                                <div class="overlay-color"></div>
+                            <img src="images/fifa2022.jpg" alt="img">
+                        </div>
+                            <div class="txt_box">
+                                <h2>張筑涵取得東奧輕艇激流參賽門票取得 東奧輕艇激流參賽門票</h2>
+                                <div class="article_time">2020/12/09 14:24</div>
+                            </div>
+                        </div>
+
+                        <div class="pubu">
+                            <div class="img">
+                                <div class="overlay-color"></div>
+                                <img src="images/fifa2022-2.jpg" alt="img">
+                            </div>
+                            <div class="txt_box">
+                                <h2>NBA金塊後衛莫瑞膝傷動刀　本季報銷 無緣奧運</h2>
+                                <div class="article_time">2020/12/09 14:24</div>
+                            </div>
+                        </div>
+
+                        <div class="pubu">
+                            <div class="img">
+                                <div class="overlay-color"></div>
+                                <img src="images/fifa2022-3.jpg" alt="img">
+                            </div>
+                            <div class="txt_box">
+                                <h2>「封城」擴至北海道等九地！「封城」 擴至北海道等九地！</h2>
+                                <div class="article_time">2020/12/09 14:24</div>
+                            </div>
+                        </div>
+                        
+                        <div class="pubu">
+                            <div class="img">
+                                <div class="overlay-color"></div>
+                                <img src="images/fifa2022-4.jpg" alt="img">
+                            </div>
+                            <div class="txt_box">
+                                <h2>瑞莎引爆基層體壇風暴 瑞莎引爆基層體 壇風暴</h2>
+                                <div class="article_time">2020/12/09 14:24</div>
+                            </div>
+                        </div>
+
+                        <div class="pubu">
+                            <div class="img">
+                                <div class="overlay-color"></div>
+                                <img src="images/fifa2022-5.jpg" alt="img">
+                            </div>
+                            <div class="txt_box">
+                                <h2>冒充記者大鬧國際奧會　男子舉布條嗆 「停辦東奧」</h2>
+                                <div class="article_time">2020/12/09 14:24</div>
+                            </div>
+                        </div>
+                       
+                        <div class="pubu">
+                            <div class="img">
+                                <div class="overlay-color"></div>
+                                <img src="images/fifa2022-6.jpg" alt="img">
+                            </div>
+                            <div class="txt_box">
+                                <h2>東奧聖火爆感染！鹿兒島6員染疫 東奧 聖火爆感染！鹿兒島6員染疫</h2>
+                                <div class="article_time">2020/12/09 14:24</div>
+                            </div>
+                        </div>
+
+                        <div class="pubu">
+                            <div class="img">
+                                <div class="overlay-color"></div>
+                                <img src="images/fifa2022-7.jpg" alt="img">
+                            </div>
+                            <div class="txt_box">
+                                <h2>冒充記者大鬧國際奧會　男子舉布條嗆 「停辦東奧」</h2>
+                                <div class="article_time">2020/12/09 14:24</div>
+                            </div>
+                        </div>
+
+                        <div class="pubu">
+                            <div class="img">
+                                <div class="overlay-color"></div>
+                                <img src="images/fifa2022-8.jpg" alt="img">
+                            </div>
+                            <div class="txt_box">
+                                <h2>許淑淨倫敦奧運遞補金牌到手 許淑淨 倫敦奧運遞補金牌到手</h2>
+                                <div class="article_time">2020/12/09 14:24</div>
+                            </div>
+                        </div>
+                       
+                      </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+</main>
+<!--main ed-->
+<!--footer-->
+<footer>
+    <div class="frame_box">
+        <small> © TVBS Media Inc. All Rights Reserved.<br>台北市內湖區瑞光路451號 | 聯利媒體股份有限公司 </small>
+    </div>
+</footer>
+<!--footer ed-->
+<!--container主架構ed-->
+</div>
+</body>
+</html>

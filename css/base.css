@@ -1254,7 +1254,7 @@ footer .logo_box li:first-child{width:80px;padding-top:0;margin-right:0;}
 }
 /*footer ed*/
 
-/* 各組戰績 */
+/* 各組戰績頁 */
 .record_section{
     margin-top: 40px;
     margin-bottom: 80px;
@@ -1360,6 +1360,9 @@ font-weight: 400;
         .record_section .record_box:nth-child(2n){
             margin: 0 auto 16px  auto;
             }
+        .record_section .record_box .list ul li .num_box .c1{
+            font-weight:bolder;
+        }
     }
     @media (max-width:767px) {
     /* .frame_box {
@@ -1387,8 +1390,10 @@ font-weight: 400;
     }
     .record_section .record_box .list ul li .num_box .box{
         width: 40px;
-        font-weight: 400;
-        }
+    }
+    .record_section .record_box .list ul li .num_box .c1{
+            font-weight:bolder;
+    }
     }
     @media (max-width:414px) {
         /* .frame_box {
@@ -1421,7 +1426,9 @@ font-weight: 400;
             font-weight: 400;
             font-size: 12px;
             } */
-
+            .record_section .record_box .list ul li .num_box .c1{
+                font-weight:bolder;
+            }
 
     }
     @media (max-width:372px) {
@@ -1435,8 +1442,94 @@ font-weight: 400;
         }
         .record_section .record_box .list ul li .num_box .box{
             width: 34px;
-            font-weight: 400;
             font-size: 13px;
             }
     }
-/* 各組戰績  end*/
+/* 各組戰績頁  end*/
+
+/* 精彩瞬間頁 */
+.article_wonderful{
+ margin-top: 40px;
+ width: 1200px;
+
+}
+/*瀑布*/ 
+.pubu {
+    display: block;
+    background: white;
+    transition: all 220ms;
+    margin: 0 0 24px 0;
+  }
+  .pubu:hover {
+    transform: translateY(-5px);
+    transition: all 220ms;
+  }
+  .pubu > img {
+    display: block;
+    width: 100%;
+
+  }
+  .pubu .img {
+   line-height: 0 ;
+   /* height: 222px; */
+   height: 217px;
+  }
+  .pubu .txt_box {
+    background-color: #F7F2F7;
+    padding: 8px 0px;
+  }
+  .pubu h2 {      
+    font-size: 20px;
+    /* font-weight: 500; */
+    text-transform: uppercase;
+    background-color:transparent;
+    /* color:#fff; */
+    margin-bottom:10px;
+    line-height: 27px;
+    /* overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; */
+    display: -webkit-box;
+  }
+  .pubu .txt_box .article_time {
+    text-align: right;
+    color: #4E483A;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .wall {
+    display: block;
+    position: relative;
+  }
+  .wall-column {
+    display: block;
+    position: relative;
+    /* width: 33.3%; */
+    width: calc((100% - 45px) / 3);
+    /* width: 385px; */
+    float: left;
+    box-sizing: border-box;
+    /* padding: 0 12px; */
+    /* padding: 0 12px; */
+    margin-right: 22.5px;
+  }
+  .wall-column:nth-child(3n) {
+    margin-right: 0px;
+  }
+  @media (max-width: 1023px) {
+    .wall-column {
+      width: 50%;
+    }
+  }
+  @media (max-width: 767px) {
+    .wall-column {
+      width: auto;
+      float: none;
+      padding: 0 ;
+    }
+  }
+/*瀑布ed*/
+/* 精彩瞬間頁  end*/
