@@ -48,10 +48,6 @@ a:hover .img_mask {
 input::-ms-clear {
     display: none;
 }
-a:hover,a:hover .txt p {
-    color: #e62320;
-    transition:0.3s;
-}
 /*去除input默認樣式*/
 textarea,
 text,
@@ -124,7 +120,10 @@ a:hover .overlay-color {
     transition: 0.3s ;
 }
 
-
+a:hover,a:hover .txt_box .txt,a:hover .txt p{
+    color: #e62320;
+    transition:0.3s;
+}
 /*文字圖片效果 ed*/
 
 /* more*/
@@ -274,7 +273,9 @@ header{position: relative;}
 @media (max-width:374px){    
     .menu_bar h1 {font-size: 20px;}
 }
-
+@media (max-width:359px){    
+    .menu.mo .list li.fb .img {bottom: -2px;} 
+}
 /* 快訊 */
 .good_box{font-size:18px;align-items: center;background-color:#E8E6D9;padding:10px 0;}
 .good_box .title{
@@ -335,7 +336,7 @@ header{position: relative;}
 .section .schedule .head p{width:60px;margin-right:20px;color:#4E483A;}
 .section .schedule .head .time{text-align:center;width:120px;color:#4E483A;font-size:16px;font-weight:400 ;}
 .section .schedule .txt_box{padding:15px 5px 10px;text-align: center;font-size: 16px;font-weight: 500;color:#4E483A;}
-.section .schedule .txt_box.flex{justify-content:space-between;}
+.section .schedule .txt_box.flex{justify-content:center;}
 .section .schedule .txt_box .team_img{width:80px;font-size:12px;font-weight: 500;color:#4E483A;}
 .section .schedule .txt_box .team_img img{width:100%;}
 .section .schedule .score_box{margin:0 10px;}
@@ -347,7 +348,7 @@ header{position: relative;}
 .section .schedule .score_box .score:last-child{margin-right:0;}
 .section .schedule .pk_box{margin-top:5px;}
 .section .schedule .pk_box .pk1,.section .schedule .pk_box .pk1{width:30px;height:30px;}
-@media (max-width:1199px){
+@media (max-width:1199px){    
     .section .schedule ul {
         flex-wrap:wrap;
     }
@@ -356,7 +357,7 @@ header{position: relative;}
         background-color: #FFFFFF;
         margin-bottom: 25px;
     }
-    .section .schedule .txt_box.flex{padding:20px;}
+    .section .schedule .txt_box.flex{padding:20px;justify-content:space-between;}
     .section .schedule .head .time{margin-left:15%;}
     .section .schedule li:last-child{margin-right:25px;}
     .section .schedule li:nth-child(2n){margin-right:0;}
@@ -475,9 +476,11 @@ top:40% !important;
     border-radius: 30px;    
 }
 .section .team_icon li .index_group_active{
+    border: 1px solid #F1DDDE;
     background-color:#F1DDDE;
 }
 .section .team_icon li a.act,.section .team_icon li a:hover{
+    border: 1px solid #F1DDDE;
     background-color:#F1DDDE;
 }
 @media (max-width:767px){
@@ -499,7 +502,7 @@ top:40% !important;
     }
 }
 .section .team_list{color:#4E483A;}
-.section .team_list.flex{align-items: flex-start;margin-bottom: 24px;}
+.section .team_list.flex{align-items: flex-start;margin-bottom:15px;}
 .section .team_list ul{flex-wrap:wrap;}
 .section .team_listL{background-color:#fff;}
 .section .team_listL .head{
@@ -561,6 +564,11 @@ top:40% !important;
 .section .team_listR .pk_box{margin-top:5px;}
 .section .team_listR .pk_box .pk1,.section ..team_listR .pk_box .pk1{width:30px;height:30px;}
 @media (max-width:1199px){
+    .section .team_list.flex{margin-bottom: 10px;}
+    .section .team_list.flex {
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
     .section .team_listL{width:40%;}
     .section .team_listR{width:60%;}
 }
@@ -650,7 +658,7 @@ top:40% !important;
     }
     .section .team_pack li {
         margin-right:15px;
-        width: calc((100% - 65px)/4);
+        width: calc((100% - 50px)/4);
     }
 }
 
@@ -902,7 +910,7 @@ top:40% !important;
 
 @media (max-width:767px) {
     .section .fifa_video .img {
-        height: 223px;
+        height: 216px;
         margin-bottom:5px;
     }
     .section .fifa_video li {
@@ -1072,6 +1080,7 @@ top:40% !important;
     margin-right: 20px;
 }
 .schedule_notice .team_tag .tag a.act,.schedule_notice .team_tag .tag a:hover{
+    border: 1px solid #F1DDDE;
     background-color:#F1DDDE;
 }
 .schedule_notice .tag_more{width:100%;padding:5px 0;background-color:#F1DDDE;}
@@ -1215,17 +1224,20 @@ top:40% !important;
 /* 小組賽程 ed*/
 
 /* 焦點新聞 */
-.foucs_news{}
-.foucs_news .title{}
-.foucs_news .title .tag{}
-.foucs_news .title .tag ul{display: flex;align-items: center;}
-.foucs_news .title .tag li{}
-.foucs_news .title .tag a{
+.focus_news{}
+.focus_news .title{}
+.focus_news .tag{overflow: hidden;padding:10px 0 20px;}
+.focus_news .tag ul{display: flex;align-items: center;justify-content: center;}
+.focus_news .tag a{
     font-size:20px;
-    color:#B87486;padding:5px 10px;
+    color:#B87486;padding:5px 15px;
     border: 1px solid #B87486;
     border-radius: 30px;
     margin-right: 20px;
+}
+.focus_news .tag a.act,.focus_news .tag a:hover{
+    border: 1px solid #F1DDDE;
+    background-color:#F1DDDE;
 }
 /* 焦點新聞 ed*/
 /* 內文區塊ed */
