@@ -243,7 +243,6 @@ header{position: relative;}
 .menu_bar .menu::-webkit-scrollbar {width:0;height:0;}
 @media (max-width:1199px){
     .menu_bar .menu{width:80%;overflow-x:auto;margin:0 20px;}
-    
     .menu_bar .menu ul{white-space: nowrap;}
     .menu_bar .menu li a{color: #B87486;font-size:18px;}
     .menu_bar .community li{width:30px;height:30px;margin-right:10px;}
@@ -566,6 +565,7 @@ top:40% !important;
 .section .team_listR .pk_box{margin-top:5px;}
 .section .team_listR .pk_box .pk1,.section ..team_listR .pk_box .pk1{width:30px;height:30px;}
 @media (max-width:1199px){
+    .section .team_listR .txt_box{padding:15px 15px 11.5px;}
     .section .team_list.flex{margin-bottom: 10px;}
     .section .team_list.flex {
         align-items: flex-start;
