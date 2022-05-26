@@ -838,7 +838,7 @@ font-size: 20px;}
 /* 影音放送 */
 .section .fifa_video {margin-bottom: 30px;overflow: hidden;}
 .section .fifa_video  {margin-bottom:10px;}
-.section .fifa_video .play{
+.play{
     display:flex;align-items: center;
     font-size:14px;
     color:#fff;position:absolute; right:12px;bottom:12px;
@@ -847,7 +847,7 @@ font-size: 20px;}
     background: url(../images/play_icon.svg) 8px center no-repeat; 
     background-color: rgba(124,23,44,0.6);
 }
-.section .fifa_video .play p{margin-right:10px;}
+.play p{margin-right:10px;}
 .section .fifa_video .img {
     width: 100%;position: relative;
     height: 210px;
@@ -1196,6 +1196,9 @@ font-size: 20px;}
 }
 .schedule_notice .team_group .time{width: 130px;font-weight: normal;}
 .schedule_notice .team_group .team_box{width:auto;font-weight: normal;}
+@media (max-width:1199px) {
+    .schedule_notice .team_group_title .title{font-size: 20px;}
+}
 @media (max-width:1023px) {
     
     .schedule_notice .team_tag .name {
@@ -1210,7 +1213,7 @@ font-size: 20px;}
     
 }
 @media (max-width:767px) {
-    .schedule_notice .team_group_title .title{font-size: 20px;}
+    
     .schedule_notice .team_group_title .list .txt{font-size: 12px;}
     .schedule_notice .team_group li {
         display: block;
@@ -1405,12 +1408,42 @@ font-size: 20px;}
 .playlist{margin:40px 0 30px;}
 .playlist .video{width:1060px;margin:0 auto 30px;}
 .playlist .video .list_play{background-size: 150px;}
-.playlist .video .img{margin-bottom: 10px;}
+.playlist .video .play{bottom:20px;right:20px;}
+.playlist .video .img{margin-bottom: 10px;height:560px;}
 .playlist .video .txt{
     overflow: hidden;
     white-space:nowrap;
-    font-size:28px;
+    font-size:26px;
     text-overflow: ellipsis;
+}
+@media (max-width:1199px) {
+    .playlist .video .txt{
+        font-size:24px;
+    }
+    .playlist .video .list_play{background-size:100px;}
+    .playlist .video{width:100%;margin:0 auto 30px;}
+    .playlist .video .img{height:551px;}
+}
+@media (max-width:1023px) { 
+    .playlist .video .img{height:410px;}
+}
+@media (max-width:767px) {
+    .playlist .video .play{bottom:10px;right:10px;}
+    .playlist .video .txt{
+        font-size:20px;
+    }
+    .playlist .video .list_play{background-size:80px;}
+    .playlist .video .img{height:216px;margin-bottom: 5px;}
+}
+@media (max-width:411px) {
+    .playlist .video .list_play{background-size:60px;}
+    .playlist .video .img{height:194px;}
+}
+@media (max-width:374px) {
+    .playlist .video .img{height:186px;}
+}
+@media (max-width:359px) {
+    .playlist .video .img{height:163px;}
 }
 .playlist .play_more{width:100%;overflow: hidden;}
 .playlist .play_more .title{margin:0 auto 30px;display:block;text-align: center;}
@@ -1434,13 +1467,6 @@ font-size: 20px;}
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     display: -webkit-box;
-}
-.play_more .time {
-    font-weight: normal;
-    text-align:right;
-    color:#4E483A;
-    font-size: 14px;
-    overflow: hidden;
 }
 
 @media (max-width:1199px) {
@@ -1469,86 +1495,38 @@ font-size: 20px;}
 }
 
 @media (max-width:767px) {
-    .play_more .tag_bar{margin-bottom:10px;}
-    .play_more .tag{
-        display: flex;   
-        justify-content:flex-start;    
-        white-space:nowrap;
-        overflow-x:auto;
-        margin-bottom: 0;
+    .play_more  .list .play{bottom:10px;right:10px;}
+    .play_more  .list .img {
+        height: 104px;
+        margin-bottom:5px;
     }
-    .play_more .tag a{
-        font-size:16px;
-        color:#B87486;padding:3px 10px;
-        margin-right:5px;        
+    .play_more  .list li {
+        width: calc((100% - 15px)/2);
+        margin-bottom: 20px;
     }
-    .play_more .tag li{padding:5px;}
-    .play_more .tag ul{
-        display: flex;   
-        justify-content:flex-start;    
-        white-space:nowrap;        
-        margin-bottom:0;
-    }
-    .play_more .tag::-webkit-scrollbar {width:0;height:0;}
-    
-    .play_more .list .list_play{background-size:40px;}
-    .play_more .list li {width:100%;}
-    .play_more .list li a{display: flex;}
-    .play_more .list .img {
-        width:40%;
-        height: 83px;
-        margin-right: 15px;
-        margin-bottom:0;
-    }
-    .play_more .list .txt ,.play_more .list .img{
-        margin-bottom:0;
-    }
-    .play_more .list .txt_box{
-        display: flex;flex-wrap: wrap;
-        justify-content:flex-end;
-        align-content:space-between;      
-    }
-    .play_more .list .txt {     
-        line-height: 22px;
-        height:45px;       
-    }
-
-
-    .play_more .list .txt_box {
-        width:60%;
-    }
-    .play_more .list ul {
-        display:block;
-    }
-    
-    .play_more .list li:nth-child(2n) {
+    .play_more  .list li:nth-child(2n) {
         margin-right: 0px;
     }
+    
 }
 
 @media (max-width:411px) {
-    .play_more .list .img {
-        height:74px;
+    .play_more  .list .img {
+        height: 93px;
     }
 }
 
 @media (max-width:374px) {
-    .play_more .list .img {
-        height:71px;
+    .play_more  .list .img {
+        height:89px;
     }
 }
 
 @media (max-width:359px) {
-    .play_more .list .txt {
-        font-size: 14px;
-        margin-bottom: 5px;
+    .play_more  .list .img {
+        height:77px;
     }
-    .play_more .list .img {
-        height:62px;
-    }
-    .play_more .list .time {
-        font-size: 12px;
-    }
+
 }
 
 /* 影音專區 ed*/
