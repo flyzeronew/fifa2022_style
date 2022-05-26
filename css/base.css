@@ -1211,6 +1211,7 @@ font-size: 20px;}
     
 }
 @media (max-width:767px) {
+    .schedule_notice .team_group_title .title{font-size: 20px;}
     .schedule_notice .team_group_title .list .txt{font-size: 12px;}
     .schedule_notice .team_group li {
         display: block;
@@ -1402,7 +1403,7 @@ font-size: 20px;}
 
 
 /* 影音專區 */
-.playlist{margin:30px 0;}
+.playlist{margin:40px 0 30px;}
 .playlist .video{width:1060px;margin:0 auto 30px;}
 .playlist .video .list_play{background-size: 150px;}
 .playlist .video .img{margin-bottom: 10px;}
