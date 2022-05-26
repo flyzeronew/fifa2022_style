@@ -958,7 +958,7 @@ font-size: 20px;}
 .schedule_notice .nav li a:hover,.schedule_notice .nav li.act a{border-bottom: 3px #7C174D solid;color:#7C174D;}
 .schedule_notice .section{background-color:#fff;margin-bottom:15px;}
 .schedule_notice .section:last-child{margin-bottom:0;}
-.schedule_notice .contest{}
+.schedule_notice .contest{cursor: pointer;}
 .schedule_notice .contest .title{
     box-sizing: border-box;padding:15px 20px;
     display:flex;align-items:center;

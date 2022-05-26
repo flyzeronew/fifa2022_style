@@ -123,16 +123,16 @@ $(document).ready(function(){
 
 // 賽程下拉
 $('.contest').each(function(i){
-    $(this).find('.icon').click(function(){
+    $(this).click(function(){
         $(this).toggleClass('op');
         if($(this).hasClass('op')){
-            $(this).css({
+            $(this).find('.icon').css({
                 transform:'rotate(180deg)',
                 translation:'0.3s'
             });
             $('.contest').eq(i).find('.list').slideDown();
         }else{
-            $(this).css({
+            $(this).find('.icon').css({
                 transform:'rotate(0deg)',
                 translation:'0.3s'
             });
@@ -518,7 +518,13 @@ $('.contest').each(function(i){
                                                     <div class="score1 score">3</div>
                                                     <div class="score2 score">3</div>
                                                 </div>
-
+                                                <div class="pk_box">
+                                                    <span>(</span>
+                                                    <span class="pk1">2</span>
+                                                    <span>PK</span>
+                                                    <span class="pk2">1</span>
+                                                    <span>)</span>
+                                                </div>
                                             </div>
 
                                             <div class="team2 team_img">
