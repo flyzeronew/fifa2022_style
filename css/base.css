@@ -1201,6 +1201,7 @@ font-size: 20px;}
     
 }
 @media (max-width:767px) {
+    .schedule_notice .team_group_title .list .txt{font-size: 12px;}
     .schedule_notice .team_group li {
         display: block;
         padding: 20px;
