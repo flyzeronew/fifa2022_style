@@ -1577,7 +1577,6 @@ footer .logo_box li:first-child{width:80px;padding-top:0;margin-right:0;}
     flex-wrap: wrap;
 }
 .record_section .record_box .record_head{
-    /* align-items:flex-start; */
     justify-content: space-between;
     background-color: #E8E6D9;
     padding: 17px 15px 17px 17px;
@@ -1590,7 +1589,6 @@ footer .logo_box li:first-child{width:80px;padding-top:0;margin-right:0;}
 }
 .record_section .record_box{
     width: 590px;
-    /* width: 49%; */
     height: 392px;
     margin-bottom: 16px;
 }
@@ -1599,11 +1597,10 @@ margin-left: 20px;
 }
 .record_section .record_box .record_head .num_box .box{
     width: 50px;
-    /* width: 46px; */
     font-size: 20px;
     text-align: center;
     font-weight: 400;
-
+    color:#4E483A;
 }
 .record_section .record_box .record_head .num_box .c1{
     color:#881735;
@@ -1627,6 +1624,7 @@ align-items: center;
     padding: 15px;
 }
 .record_section .record_box .list ul li .country_name{
+    color:#4E483A;
     font-weight: 500;
     width: 122px;
     text-align: center;
@@ -1634,12 +1632,11 @@ align-items: center;
 }
 .record_section .record_box .list ul li .num_box{
     display:flex ;
-    /* justify-content: space-between; */
     align-items: center;
+    color:#220A26;
 }
 .record_section .record_box .list ul li .num_box .box{
 width: 50px;
-/* width: 46px; */
 text-align: center;
 font-weight: 400;
 }
@@ -1661,10 +1658,10 @@ font-weight: 400;
         font-weight: 500;
         width:90px;
         margin: 0 8px;
-        font-size: 14px;
+        font-size: 15px;
     }
     .record_section .record_box .list ul li .num_box .box{
-        /* width: px; */
+        font-size: 15px;
         }
  }
     @media (max-width:1023px) {
@@ -1680,11 +1677,6 @@ font-weight: 400;
         }
     }
     @media (max-width:767px) {
-    /* .frame_box {
-        width:414px;
-        margin: 0 auto;
-        padding:0 15px;
-    } */
     .record_section .record_box .record_head p{ 
         font-size: 20px;
     }
@@ -1711,19 +1703,6 @@ font-weight: 400;
     }
     }
     @media (max-width:414px) {
-        /* .frame_box {
-            width:100%;
-            margin: 0 auto;        
-        } */
-        /*
-        .record_section .record_box .record_head .num_box .box{
-            width: 45px;
-            font-size: 16px;
-        }
-        .record_section .record_box .list ul li .num_box .box{
-
-            font-size: 16px;
-            }*/
     }
     @media (max-width:390px) {
         .record_section .record_box .record_head{
@@ -1733,14 +1712,6 @@ font-weight: 400;
         .record_section .record_box .list ul li{
             padding: 15px 6px;
         }
-        /* .record_section .record_box .list ul li .country_name{
-            font-size: 12px;
-        }
-        .record_section .record_box .list ul li .num_box .box{
-            width: 40px;
-            font-weight: 400;
-            font-size: 12px;
-            } */
             .record_section .record_box .list ul li .num_box .c1{
                 font-weight:bolder;
             }
@@ -1757,7 +1728,7 @@ font-weight: 400;
         }
         .record_section .record_box .list ul li .num_box .box{
             width: 34px;
-            font-size: 13px;
+            font-size: 12px;
             }
     }
 /* 各組戰績頁  end*/
@@ -1942,6 +1913,7 @@ font-weight: 400;
     height: 100vh;
     background-color: #333333;
     position: fixed;
+    /* position: block; */
     z-index:102;
     top:0;
     left: 0;
@@ -1949,7 +1921,7 @@ font-weight: 400;
 }
 .pic_light_box .box{
     width:100%;
-    height: 100vh;
+    /* height: 100vh; */
     padding:0;
     position:relative;
     margin-top:40px;
@@ -1968,7 +1940,11 @@ font-weight: 400;
 }
 .pic_light_box .list{}
 .pic_light_box .list ul{}
-.pic_light_box .list ul li{}
+.pic_light_box .list ul li{
+     height: 100vh;
+    height: 90vh;
+
+}
 .pic_light_box .list .img{
     width:100%;
     /* height:75vh; */
@@ -2010,6 +1986,9 @@ font-weight: 400;
     display:block;
     margin-bottom:10px;
     font-size:16px;
+    font-size:20px;
+    color: #E8E6D9;
+    font-weight: 400;
 }
 /* .pic_light_box .list .txt_box .num{position:absolute;right:0;} */
 
@@ -2033,7 +2012,7 @@ font-weight: 400;
     z-index: 103;
     margin-right: 25px!important;
     position: absolute;
-    top: 98%!important;
+    top: 96%!important;
     /* right:50% !important; */
 }
 	
