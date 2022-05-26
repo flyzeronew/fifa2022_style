@@ -123,16 +123,16 @@ $(document).ready(function(){
 
 // 賽程下拉
 $('.contest').each(function(i){
-    $(this).find('.icon').click(function(){
+    $(this).click(function(){
         $(this).toggleClass('op');
         if($(this).hasClass('op')){
-            $(this).css({
+            $(this).find('.icon').css({
                 transform:'rotate(180deg)',
                 translation:'0.3s'
             });
             $('.contest').eq(i).find('.list').slideDown();
         }else{
-            $(this).css({
+            $(this).find('.icon').css({
                 transform:'rotate(0deg)',
                 translation:'0.3s'
             });
