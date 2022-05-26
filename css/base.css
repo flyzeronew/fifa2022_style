@@ -1650,6 +1650,9 @@ font-weight: 400;
         .record_section .record_box:nth-child(2n){
             margin: 0 auto 16px  auto;
             }
+            .record_section .record_box .record_head p{   
+                font-size: 20px;
+            }
         .record_section .record_box .list ul li .num_box .c1{
             font-weight:bolder;
         }
