@@ -959,7 +959,7 @@ font-size: 20px;}
 .schedule_notice .section:last-child{margin-bottom:0;}
 .schedule_notice .contest{}
 .schedule_notice .contest .title{
-    box-sizing: border-box;padding:10px 20px 10px 30px;
+    box-sizing: border-box;padding:15px 20px;
     display:flex;align-items:center;
     justify-content:space-between;
     border-bottom: 1px #f5e6e8 solid;
@@ -969,10 +969,10 @@ font-size: 20px;}
 .schedule_notice .contest .title .txt.bg{background: url(../images/title_bg2.svg) 8px center no-repeat;padding:15px 70px 10px 10px;}
 .schedule_notice .contest .title .icon{width: 30px;height:30px;}
 .schedule_notice .contest .list{color:#4E483A;display: none;font-weight:normal;}
-.schedule_notice .contest .list li{border-bottom: 1px #f5e6e8 solid;padding:10px 20px 10px 30px;}
+.schedule_notice .contest .list li{border-bottom: 1px #f5e6e8 solid;padding:15px 20px;}
 .schedule_notice .contest .list li .box{display:flex;align-items:center;margin-left:10px;position: relative;}
 .schedule_notice .contest .list li:last-child{border-bottom: 0px #f5e6e8 solid;}
-.schedule_notice .time{font-size:20px;width:130px;position:absolute;}
+.schedule_notice .time{font-size:18px;width:130px;position:absolute;}
 .schedule_notice .team_box{width:100%;display:flex;align-items:center;justify-content: center;}
 .schedule_notice .team_img{display:flex;align-items:center;justify-content:center;}
 .schedule_notice .team_img img{width:80px;}
@@ -1077,7 +1077,8 @@ font-size: 20px;}
 .schedule_notice .team_tag .name{
     font-size: 24px;
     color: #FF8B17;
-    margin-right: 20px;
+    margin-right: 24px;
+    font-weight: normal;
 }
 .schedule_notice .team_tag .tag{
     display: flex;align-items: center;
@@ -1088,6 +1089,7 @@ font-size: 20px;}
     border: 1px solid #B87486;
     border-radius: 30px;
     margin-right: 20px;
+    font-weight: normal;
 }
 .schedule_notice .team_tag .tag a.act,.schedule_notice .team_tag .tag a:hover{
     border: 1px solid #F1DDDE;
@@ -1096,6 +1098,7 @@ font-size: 20px;}
 .schedule_notice .tag_more{width:100%;padding:5px 0;background-color:#F1DDDE;}
 .schedule_notice .tag_more a{display:block;text-align:center;}
 .schedule_notice .tag_more p{
+    font-weight: normal;
     font-size:20px;
     color:#B87486;
 }
@@ -1106,6 +1109,7 @@ font-size: 20px;}
 }
 .schedule_notice .team_play ul:nth-child(2){display:none;}
 .schedule_notice .team_play li{
+    color:#4E483A;
     display:flex;align-items:center;
     position: relative;
     border-bottom: 1px #f5e6e8 solid;padding:15px 30px;
@@ -1124,8 +1128,7 @@ font-size: 20px;}
 }
 @media (max-width:1023px) {
     .schedule_notice .team_tag .name {
-        font-size: 20px;
-        margin-right: 20px;
+        font-size: 20px;        
     }
     .schedule_notice .team_tag .tag a {
         font-size: 16px;
@@ -1178,9 +1181,10 @@ font-size: 20px;}
 .schedule_notice .team_group_title .list .img{width:40px;height:25px;border: 1px solid #4E483A;margin:0 auto 5px;}
 .schedule_notice .team_group_title .list .txt{font-size: 14px;}
 .schedule_notice .team_group li{
+    color: #4E483A;
     position: relative;
     display:flex;align-items:center;justify-content:center;
-    border-bottom: 1px #f5e6e8 solid;padding:15px 30px;box-sizing: border-box;
+    border-bottom: 1px #f5e6e8 solid;padding:15px 20px;box-sizing: border-box;
 }
 .schedule_notice .team_group .time{
     font-size: 20px;position:absolute;left:30px;
