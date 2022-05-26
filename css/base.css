@@ -1265,6 +1265,7 @@ font-size: 20px;}
     display: -webkit-box;
 }
 .focus_news .time {
+    font-weight: normal;
     text-align:right;
     color:#4E483A;
     font-size: 14px;
