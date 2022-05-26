@@ -1374,10 +1374,26 @@ font-size: 20px;}
     }
 }
 /* 焦點新聞 ed*/
+
+/* 跳頁選單 */
+.page_html{
+    background-color:#fff;display: flex;align-items: center;justify-content: center;
+    padding:10px;color:#4E483A;font-size:14px;
+}
+.page_html .num{padding:0 10px;border-radius:5px;border:1px #4E483A solid;margin-right:5px;}
+.page_html .limit span{margin-right:2px;}
+.page_html .limit .txt{}
+.page_html .arrawL,.page_html .arrawR{line-height:0;width:20px;height:20px;}
+.page_html .arrawL{margin-right:10px;}
+.page_html .arrawR{margin-left:10px;}
+/* 跳頁選單 ed*/
 /* 內文區塊ed */
 /*main ed*/
 /*footer*/
-footer{width:100%;padding:20px 0;background-color:#461232;overflow:hidden;color:#fff;text-align:center;}
+footer{
+    width:100%;padding:20px 0;background-color:#461232;overflow:hidden;
+    color:#fff;text-align:center;font-weight: normal;
+}
 footer small{}
 footer .logo_box{margin-bottom:5px;}
 footer .logo_box li{width:30px;display:inline-block;vertical-align:top;padding-top:5px;margin-right:5px;}
