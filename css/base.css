@@ -1740,7 +1740,7 @@ font-weight: 400;
   .pubu .img {
    line-height: 0 ;
    /* height: 222px; */
-   height: 217px;
+   /* height: 217px; */
   }
   .pubu .txt_box {
     background-color: #F7F2F7;
@@ -1804,7 +1804,7 @@ font-weight: 400;
         /* margin-right: 0px; */
       }
       .pubu .img {
-        height: 175px;
+        /* height: 175px; */
        }
   }
   @media (max-width: 1023px) {
@@ -1819,7 +1819,7 @@ font-weight: 400;
       margin-right: 22.5px;
     }
     .pubu .img {
-        height: 192px;
+        /* height: 192px; */
        }
     .wall-column:nth-child(2n) {
         margin-right: 0px;
@@ -1841,12 +1841,12 @@ font-weight: 400;
         /* padding-right: 15px; */
     }
     .pubu .img {
-        height: 104px;
+        /* height: 104px; */
        }
     .wall-column {
-        width: calc((414px - 38px) / 2);/*加上扣除frame_box的左右15px*2*/
+        width: calc((414px - 30px));/*加上扣除frame_box的左右15px*2*/
       /* width: 50%; */
-      margin-right: 8px;
+      margin-right: 0px;
     }
     .wall-column:nth-child(2n) {
         margin-right: 0px;
@@ -1860,16 +1860,17 @@ font-weight: 400;
   @media (max-width:444px) {
     .article_wonderful{
         /* width:300px; */
-        width: 270px;
+        /* width: 270px; */
+        width: 100%;
         margin: 40px auto 0px auto;
+        /* padding: 0 15px; */
     }
     .wall-column {
-         /* width: calc((300px - 8px) / 2);  */
-         width: calc((270px - 8px) / 2);
-      margin-right: 8px;
+         width: calc((100%-30px));
+      /* margin-right: 8px; */
     }
     .pubu .img {
-        height: 74px;
+        /* height: 74px; */
        }
     .wall-column:nth-child(2n) {
         margin-right: 0px;
