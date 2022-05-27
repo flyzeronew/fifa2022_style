@@ -300,8 +300,8 @@ header{position: relative;}
 /*header ed*/
 /*main*/
 /* 內文區塊 */
-.section {margin-bottom: 60px;}
-.section:nth-child(5) {margin-bottom: 60px;}
+.section {margin-bottom: 30px;}
+.section:last-child {margin-bottom:0px;}
 .section .title{    
    width:100%;
    text-align: center;
@@ -1410,7 +1410,7 @@ font-size: 20px;}
 
 
 /* 影音專區 */
-.playlist{margin:40px 0 30px;}
+.playlist{margin:40px 0 0;}
 .playlist .video{width:1060px;margin:0 auto 30px;}
 .playlist .video .list_play{background-size: 150px;}
 .playlist .video .play{bottom:20px;right:20px;}
@@ -1539,6 +1539,7 @@ font-size: 20px;}
 /*main ed*/
 /*footer*/
 footer{
+    margin-top:60px;
     width:100%;padding:20px 0;background-color:#461232;overflow:hidden;
     color:#fff;text-align:center;font-weight: normal;
 }
