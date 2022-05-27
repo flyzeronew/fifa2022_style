@@ -1555,7 +1555,6 @@ footer .logo_box li:first-child{width:80px;padding-top:0;margin-right:0;}
 /* 各組戰績頁 */
 .record_section{
     margin-top: 40px;
-    margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -1721,6 +1720,7 @@ font-weight: 400;
 
 /* 精彩瞬間頁 */
 .article_wonderful{
+ overflow: hidden;
  width: 1200px;
  margin: 40px auto 0px auto;
 
@@ -1932,7 +1932,7 @@ font-weight: 400;
 .pic_light_box .list{}
 .pic_light_box .list ul{}
 .pic_light_box .list ul li{
-    height: 90vh;
+    height: 86vh;
 }
 .pic_light_box .list .img{
     width:100%;
