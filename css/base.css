@@ -311,7 +311,7 @@ header{position: relative;}
 .section:nth-child(1) .title{
     margin-top: 40px;
 }
-.section .title p,.play_more .title p{
+.section .title p,.play_more .title p,.section .title h2,.play_more .title h2{
     width:220px;
     font-size: 28px;
     display:inline-block;margin: 0;color:#7C174D;
@@ -954,6 +954,7 @@ font-size: 20px;}
 .schedule_notice .nav{background-color:#fff;margin:40px 0 30px;}
 .schedule_notice .nav ul{display:flex;align-items:center;justify-content:center;}
 .schedule_notice .nav li{}
+.schedule_notice .nav h2{font-size:inherit;}
 .schedule_notice .nav li a{display:block;font-size:24px;color:#B87486;padding:20px 30px;border-bottom: 3px #fff solid;}
 .schedule_notice .nav li a:hover,.schedule_notice .nav li.act a{border-bottom: 3px #7C174D solid;color:#7C174D;}
 .schedule_notice .section{background-color:#fff;margin-bottom:15px;}
