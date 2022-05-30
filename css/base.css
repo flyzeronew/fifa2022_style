@@ -1979,7 +1979,7 @@ font-weight: 400;
     /*text-overflow: ellipsis; */
     display: -webkit-box;
 }
-.pic_light_box .list .txt_box small{
+.pic_light_box .list .txt_box h3{
     display:block;
     margin-bottom:10px;
     font-size:20px;
@@ -2042,7 +2042,7 @@ font-weight: 400;
     .pic_light_box .list .txt_box h2{
         font-size: 20px;
     }
-    .pic_light_box .list .txt_box small{
+    .pic_light_box .list .txt_box h3{
         /* font-size: 16px; */
         font-size: 14px;
      
