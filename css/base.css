@@ -156,8 +156,7 @@ a:hover,a:hover .txt_box .txt,a:hover .txt p{
     z-index: 2;
     right: 20px;
     bottom: 20px;
-    transition: 0.5s;
-    display:none;
+    transition: 0.5s;  
     cursor: pointer;
     padding: 0;
 }
