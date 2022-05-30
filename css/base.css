@@ -1449,7 +1449,7 @@ font-size: 20px;}
     .playlist .video .img{height:163px;}
 }
 .playlist .play_more{width:100%;overflow: hidden;}
-.playlist .play_more .title{margin:0 auto 30px;display:block;text-align: center;}
+.playlist .play_more .title{margin:30px auto;display:block;text-align: center;}
 
 .play_more .list{}
 .play_more .list ul{display:flex;flex-wrap: wrap;}
