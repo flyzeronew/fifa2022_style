@@ -1920,7 +1920,8 @@ font-weight: 400;
     width:50px;
     height: 50px;
     position: absolute;
-    right:200px;
+    /* right:200px; */
+    right:13%;
     top:0px;
     cursor:pointer;
     z-index:102;
@@ -2030,13 +2031,32 @@ font-weight: 400;
 /*外掛*/
 
 @media (max-width: 414px) {
-    .pic_light_box .list .txt_box h2{width:100%;margin-bottom:10px;font-size:28px;}
-    .pic_light_box .list .img{width:100%;height:auto; display:block;padding-top:60px;margin:0 auto 10px;}
-       .pic_light_box .list .txt_box .num{position:absolute;bottom:-10px;}
-    .pic_light_box .list .img img{width:100%;max-width:100%;}   
+/* @media (max-width: 688px) { */
+    .pic_light_box .list .txt_box h2{
+        width:100%;
+        margin-bottom:10px;
+        font-size:28px;
+    }
+    .pic_light_box .list .img{
+        width:100%;
+        height:auto;
+         display:block;
+         /* padding-top:60px; */
+         margin:0 auto 10px;
+    }
+    .pic_light_box .list .txt_box .num{
+        position:absolute;
+        bottom:-10px;
+    }
+    .pic_light_box .list .img img{
+        width:100%;
+        max-width:100%;
+    }   
     .pic_light_box .owl-next,.pic_light_box .owl-prev{
-        width: 40px !important;
-        height: 40px !important;top:30% !important; }	 
+        /* width: 35px !important;
+        height: 35px !important; */
+        /* top:30% !important;  */
+    }	 
 }
 
 /*圖集ed*/
