@@ -1424,7 +1424,7 @@ font-size: 20px;}
         font-size:24px;
     }
     .playlist .video .list_play{background-size:100px;}
-    .playlist .video{width:100%;margin:0 auto 30px;}
+    .playlist .video{width:100%;margin:0 auto ;}
     .playlist .video .img{height:551px;}
 }
 @media (max-width:1023px) { 
@@ -1449,7 +1449,7 @@ font-size: 20px;}
     .playlist .video .img{height:163px;}
 }
 .playlist .play_more{width:100%;overflow: hidden;}
-.playlist .play_more .title{margin:30px auto;display:block;text-align: center;}
+.playlist .play_more .title{margin:60px auto 30px;display:block;text-align: center;}
 
 .play_more .list{}
 .play_more .list ul{display:flex;flex-wrap: wrap;}
