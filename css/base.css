@@ -1289,9 +1289,7 @@ font-size: 20px;}
         margin-right:15px;
         width: calc((100% - 50px)/4);
     }
-    .focus_news .txt {
-        font-size: 18px;
-    }
+
 }
 
 @media (max-width:1023px) {
