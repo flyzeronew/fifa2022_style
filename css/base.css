@@ -1882,12 +1882,12 @@ font-weight: 400;
   
 /*瀑布ed*/
 /*圖集*/ 
+/*
 .pic_light_box::-webkit-scrollbar {width: 1px;}
 .black_background_box{
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, .85);
-    /* position: fixed; */
     z-index:101;
     top:0;
     left: 0;
@@ -1905,7 +1905,6 @@ font-weight: 400;
 }
 .pic_light_box .box{
     width:100%;
-    /* height: 100vh; */
     padding:0;
     position:relative;
     margin-top:40px;
@@ -1918,8 +1917,6 @@ font-weight: 400;
     width:50px;
     height: 50px;
     position: absolute;
-    /* right:200px; */
-    /* right:13%; */
     right:5%;
     top:0px;
     cursor:pointer;
@@ -1927,8 +1924,7 @@ font-weight: 400;
 }
 .pic_light_box .img{}
 .pic_light_box .img img{
-    /* width: 663.63px;
-    height: 373px; */
+
 }
 .pic_light_box .list{}
 .pic_light_box .list ul{}
@@ -1938,11 +1934,8 @@ font-weight: 400;
 .pic_light_box .list .img{
     position: relative;
     width:100%;
-    /* width: 663.63px;
-    height: 373px; */
     width: 640px;
     height: 359.849px;
-    /* height:75vh; */
     display:flex;
     justify-content: center;
     margin:0px auto 0px;
@@ -1950,10 +1943,8 @@ font-weight: 400;
 .pic_light_box .list .img img{width:auto;max-width:100%;}
 .pic_light_box .list .txt_box{
     color: #fff;
-    /* position: relative; */
     margin: 15px 15px 30px;
     margin: 5px 15px 30px;
-    /* font-size:28px; */
     text-align: center;
     
     display: flex;
@@ -1961,8 +1952,6 @@ font-weight: 400;
 
 }
 .pic_light_box .list .txt_box .txt_content{
- /* display: flex; */
- /* width: 663.63px; */
  width: 640px;
 }
 .pic_light_box .list .txt_box .num{
@@ -1978,9 +1967,6 @@ font-weight: 400;
     font-size:22px;
     text-align: center;
     -webkit-box-orient: vertical;
-    /* overflow: hidden;   
-    -webkit-line-clamp: 2; */
-    /*text-overflow: ellipsis; */
     display: -webkit-box;
 }
 .pic_light_box .list .txt_box h3{
@@ -1998,38 +1984,20 @@ font-weight: 400;
  color: #E8E6D9;
  font-weight: normal;
 }
-/* .pic_light_box .list .txt_box .num{position:absolute;right:0;} */
-
+*/
 /*外掛*/  
-.pic_light_box .owl-theme .owl-dots {display: none!important;}
+/*.pic_light_box .owl-theme .owl-dots {display: none!important;}
 .pic_light_box .owl-next,.pic_light_box .owl-prev{   
-   /* width: 35px !important;
-    height: 35px !important;
-    position: absolute;
-    background-repeat: no-repeat !important;
-    background-color: rgba(0,0,0,0) !important;
-    background-size: 100% !important;
-    top:40% !important;
-    right:50% !important;*/
     width: 35px !important;
     height: 35px !important;
-    /* position: absolute; */
     background-repeat: no-repeat !important;
     background-color: rgba(0,0,0,0) !important;
-    /* position: block; */
     z-index: 103;
-    /* margin-right: 25px!important; */
-
-
     position: absolute;
     top:28% !important;
-    /* top:100% !important; */
 }
 	
 .pic_light_box .owl-next{
-    /* right:46%!important;
-    right:45.5%!important; */
-    /* right:0!important; */
     right:5%!important;
     background-image: url(../images/icon_navigate_next_DIsabled.svg) !important;
     width: 50px !important;
@@ -2037,16 +2005,13 @@ font-weight: 400;
 
 }
 .pic_light_box .owl-prev{
-    /* left:47%!important; 
-    left:47.5%!important;  */
-    /* left:0!important; */
     left:5%!important;
     background-image: url(../images/icon_navigate_before_Enable.svg) !important;
     width: 50px !important;
     height: 50px !important;
-}
+}*/
 /*外掛*/
-@media (max-width: 1199px) {
+/*@media (max-width: 1199px) {
     .pic_light_box .list .txt_box .num{
         font-size: 14px;
     }
@@ -2068,12 +2033,10 @@ font-weight: 400;
         font-size: 20px;
     }
     .pic_light_box .list .txt_box h3{
-        /* font-size: 16px; */
         font-size: 14px;
      
     }
     .pic_light_box .list .txt_box .article_time{
-        /* font-size: 14px; */
         font-size: 12px;
     }
     .pic_light_box .owl-next{
@@ -2087,11 +2050,8 @@ font-weight: 400;
         height: 24px !important;
     }
 }
-/* @media (max-width: 414px) { */
 @media (max-width: 688px) {
     .pic_light_box .list ul li{
-        /* height: 86vh; */
-        /* padding:0 15px; */
         padding:0 49px;
     }
 
@@ -2099,14 +2059,9 @@ font-weight: 400;
         width:100%;
         height:auto;
          display:block;
-         /* padding-top:60px; */
          margin:0 auto 10px;
-         /* margin:0 10px; */
-         /* padding:0 15px; */
     }
     .pic_light_box .list .txt_box .num{
-        /* position:absolute;
-        bottom:-10px; */
     }
     .pic_light_box .list .img img{
         width:100%;
@@ -2118,14 +2073,12 @@ font-weight: 400;
     .pic_light_box .owl-next{
         top: calc((100vw - 98px)/1060 *596*0.35)!important;
         right:0%!important;
-        /* right: 5%!important; */
     }
     .pic_light_box .owl-prev{
 
 
         top: calc((100vw - 98px)/1060 *596*0.35)!important;
         left:0%!important;
-        /* left:5%!important; */
     }	 
 
 }
@@ -2145,7 +2098,116 @@ font-weight: 400;
         left:5%!important;
     }
 }
-
+*/
 /*圖集ed*/
+
+/*圖集*/ 
+.pic_light_box::-webkit-scrollbar {width: 1px;}
+.pic_light_box{width: 100%;height: 100vh;background-color: #333333;position: fixed;z-index:2;top:0;left: 0;overflow-y:auto;}
+.pic_light_box .box{width:100%;padding:0;position:relative;margin-top:40px;box-sizing: border-box;display:fix;align-items: center;justify-content: center;}
+.pic_light_box .xx{width:25px;height: 25px;position: absolute;right:15px;top:15px;cursor:pointer;z-index:2;}
+.pic_light_box .img{}
+.pic_light_box .list{}
+.pic_light_box .list ul{}
+.pic_light_box .list ul li{}
+.pic_light_box .list .img{width:100%;
+    height:75vh;
+     display:flex;
+     justify-content: center;
+     margin:30px auto 10px;
+    }
+.pic_light_box .list .img img{width:auto;max-width:100%;}
+.pic_light_box .list .txt_box{
+    color: #fff;
+    position: relative;
+    margin: 15px 15px 30px;
+    margin: 15px 20px 30px 20px;
+    margin: 15px 35px 30px 35px;
+    /* padding:0 10px; */
+}
+.pic_light_box .list .txt_box h2{
+    width:90%;margin-bottom:10px;font-size:28px;overflow: hidden;   
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+.pic_light_box .list .txt_box h3{
+ font-size: 16px;
+ font-weight: 400;
+ margin-bottom:10px;
+}
+
+.pic_light_box .list .txt_box small{display:block;margin-bottom:10px;font-size:16px;}
+.pic_light_box .list .txt_box .num{
+    position:absolute;right:0;
+    /* text-align: right; */
+    font-size: 18px;
+    font-weight: 400;
+}
+.pic_light_box .list .txt_box .article_time{
+    font-size: 14px;
+    color:#969696;
+    margin-bottom:10px;
+    font-weight: 400;
+}
+
+/*外掛*/  
+.pic_light_box .owl-theme .owl-dots {display: none!important;}
+.pic_light_box .owl-next,.pic_light_box .owl-prev{   
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
+    background-repeat: no-repeat !important;
+    background-color: rgba(0,0,0,0) !important;
+    background-size: 100% !important;
+    top:40% !important;
+}	
+.pic_light_box .owl-next{right:0!important;background-image: url(../images/icon_navigate_next_DIsabled.svg) !important;}
+.pic_light_box .owl-prev{left:0!important; background-image: url(../images/icon_navigate_before_Enable.svg) !important;}
+/*外掛*/
+@media (max-width: 767px) {
+    .pic_light_box .owl-next,.pic_light_box .owl-prev{   
+        /* top:calc((100vw - 98px)/1060 *596*0.6)!important; */
+        top:calc((100vw)/1060 *596*0.6)!important;
+    }
+    .pic_light_box .list .img{
+        width:100%;
+        height:auto; 
+        display:flex;
+        justify-content: center;
+        margin:30px auto 10px;}
+.pic_light_box .list .img img{
+    width:auto;
+    max-width:100%;
+}
+
+}
+@media (max-width: 414px) {
+    .pic_light_box .list .txt_box h2{width:100%;margin-bottom:10px;font-size:28px;}
+    .pic_light_box .list .img{width:100%;height:auto; display:block;padding-top:60px;margin:0 auto 10px;}
+       .pic_light_box .list .txt_box .num{position:absolute;bottom:-10px;right:0;}
+    .pic_light_box .list .img img{width:100%;max-width:100%;}   
+    .pic_light_box .owl-next,.pic_light_box .owl-prev{
+        width: 40px !important;
+        height: 40px !important;
+        top:25% !important; 
+    }	 
+}
+
+@media (max-width: 342px) {
+    .pic_light_box .owl-next,.pic_light_box .owl-prev{
+        top:22% !important; 
+    }	 
+}
+
+/*圖集ed*/ 
+
+
+
+
+
+
+
 
 /* 精彩瞬間頁  end*/
