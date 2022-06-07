@@ -129,12 +129,14 @@ $('.tag_more').click(function(){
             transform:'rotate(180deg)',
             translation:'0.3s'
         });
+        $(this).find('p').html('收合');
         $('.team_play ul').eq(1).slideDown();
     }else{
         $(this).find('.arraw').css({
             transform:'rotate(0deg)',
             translation:'0.3s'
         });
+        $(this).find('p').html('更多球隊');
         $('.team_play ul').eq(1).slideUp();
         $(this).removeClass('op');
     }
