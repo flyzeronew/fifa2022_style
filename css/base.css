@@ -311,12 +311,16 @@ header{position: relative;}
     margin-top: 40px;
 }
 .section .title p,.play_more .title p,.section .title h2,.play_more .title h2{
-    width:220px;
+    min-width:220px;
     font-size: 28px;
     display:inline-block;margin: 0;color:#7C174D;
     background: url(../images/title_bg.svg) center bottom no-repeat;
 }
-
+@media (max-width:767px){
+    .section .title p,.play_more .title p,.section .title h2,.play_more .title h2{
+        min-width:inherit;width:220px;
+    }
+}
 /* 首頁 */
 /* 最新賽程 */
 .section .schedule{}
