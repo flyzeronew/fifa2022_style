@@ -2180,8 +2180,8 @@ font-weight: 400;
 /*外掛*/
 @media (max-width: 767px) {
     .pic_light_box .owl-next,.pic_light_box .owl-prev{   
-        /* top:calc((100vw - 98px)/1060 *596*0.6)!important; */
-        top:calc((100vw)/1060 *596*0.6)!important;
+        /* top:calc((100vw)/1060 *596*0.6)!important; */
+        top:40%!important;
     }
     .pic_light_box .list .img{
         width:100%;
@@ -2201,14 +2201,13 @@ font-weight: 400;
         width:100%;
         height:auto; 
         display:block;
-        padding-top:60px;
-        padding-top:85px;
+        padding-top:100px;
         margin:0 
         auto 10px;
     }
     .pic_light_box .xx{
-    width:24px;
-    height: 24px;
+    width:40px;
+    height: 40px;
 
     }
        .pic_light_box .list .txt_box .num{position:absolute;bottom:-10px;right:0;}
@@ -2216,15 +2215,15 @@ font-weight: 400;
     .pic_light_box .owl-next,.pic_light_box .owl-prev{
         width: 40px !important;
         height: 40px !important;
-        top:25% !important; 
+        top:30% !important; 
     }	 
 }
 
-@media (max-width: 342px) {
+/*@media (max-width: 342px) {
     .pic_light_box .owl-next,.pic_light_box .owl-prev{
         top:22% !important; 
     }	 
-}
+}*/
 
 /*圖集ed*/ 
 
