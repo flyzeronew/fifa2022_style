@@ -2110,7 +2110,16 @@ font-weight: 400;
 /*圖集*/ 
 .pic_light_box::-webkit-scrollbar {width: 1px;}
 .pic_light_box{width: 100%;height: 100vh;background-color: #333333;position: fixed;z-index:2;top:0;left: 0;overflow-y:auto;}
-.pic_light_box .box{width:100%;padding:0;position:relative;margin-top:40px;box-sizing: border-box;display:fix;align-items: center;justify-content: center;}
+.pic_light_box .box{
+    width:100%;
+    padding:0;
+    position:relative;
+    margin-top:40px;
+    box-sizing: border-box;
+    display:fix;
+    align-items: center;
+    justify-content: center;
+}
 .pic_light_box .xx{
     width:50px;
     height: 50px;
@@ -2125,7 +2134,9 @@ font-weight: 400;
 .pic_light_box .img{}
 .pic_light_box .list{}
 .pic_light_box .list ul{}
-.pic_light_box .list ul li{}
+.pic_light_box .list ul li{
+    height: 100vh;
+}
 .pic_light_box .list .img{width:100%;
     height:75vh;
      display:flex;
