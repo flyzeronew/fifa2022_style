@@ -2195,8 +2195,8 @@ font-weight: 400;
 /*外掛*/
 @media (max-width: 767px) {
     .pic_light_box .owl-next,.pic_light_box .owl-prev{   
-        /* top:calc((100vw)/1060 *596*0.6)!important; */
-        top:40%!important;
+        top:calc((100vw)/1060 *596*0.6)!important;
+        /* top:40%!important; */
         background-color: #220A26!important;
         opacity: 0.7!important;
     }
@@ -2232,7 +2232,8 @@ font-weight: 400;
     .pic_light_box .owl-next,.pic_light_box .owl-prev{
         width: 40px !important;
         height: 40px !important;
-        top:35% !important; 
+        /* top:35% !important;  */
+        top:calc((100vw)/1060 *596*0.9)!important;
     }	 
 }
 
