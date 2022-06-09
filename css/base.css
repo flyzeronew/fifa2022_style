@@ -2197,6 +2197,8 @@ font-weight: 400;
     .pic_light_box .owl-next,.pic_light_box .owl-prev{   
         /* top:calc((100vw)/1060 *596*0.6)!important; */
         top:40%!important;
+        background-color: #220A26!important;
+        opacity: 0.7!important;
     }
     .pic_light_box .list .img{
         width:100%;
