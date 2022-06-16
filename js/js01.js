@@ -32,14 +32,27 @@ $(function() {
         console.log("scrollTop:"+$(window).scrollTop());
         console.log("_height:"+$(window).height());
         console.log("doc_height:"+$(document).height());
-        if($(window).scrollTop() + $(window).height() > $(document).height()-100) {
-            //alert("near bottom!");
-            $("#back").css({"bottom":"112px","transition":"0.5s"});
+        if ($(window).width()>767){
+            if($(window).scrollTop() + $(window).height() > $(document).height()-100) {
+                //alert("near bottom!");
+                $("#back").css({"bottom":"112px","transition":"0.5s"});
+            }else{
+                $("#back").css({"bottom":"20px","transition":"0.5s"});
+            }
         }else{
-            $("#back").css({"bottom":"20px","transition":"0.5s"});
+            if($(window).scrollTop() + $(window).height() > $(document).height()-100) {
+                //alert("near bottom!");
+                $("#back").css({"bottom":"160px","transition":"0.5s"});
+                $(".flexd_bottom_ad").css({"bottom":"100px","transition":"0.5s"});
+                
+            }else{
+                $(".flexd_bottom_ad").css({"bottom":"0","transition":"0.5s"});
+                $("#back").css({"bottom":"60px","transition":"0.5s"});
+            }
         }
      });
 
  /*gotop ed*/
-
+//  蓋板關閉
+$('.lightbox_ad .xx').click(function(){$('.lightbox_ad').hide();});
 });
