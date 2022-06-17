@@ -345,47 +345,47 @@
                                     });
 
                                     //querystring控制頁數
-                                    owl = $(".pic_light_box .list ul").data('owlCarousel');
+                                    // owl = $(".pic_light_box .list ul").data('owlCarousel');
 
-                                    $('.owl-prev').on('click', function () {
-                                        var url = window.location.pathname;
-                                        var num = $('.owl-item').eq(1).find('.num').html();
-                                        var now_page_array = num.split('/');
-                                        var now_page = now_page_array[0];
-                                        if (now_page == 1) {
-                                            now_page = now_page_array[1];
-                                        } else {
-                                            now_page = now_page - 1;
-                                        }
-                                        window.location.href = (url + "?pic=" + now_page);
-                                    });
+                                    // $('.owl-prev').on('click', function () {
+                                    //     var url = window.location.pathname;
+                                    //     var num = $('.owl-item').eq(1).find('.num').html();
+                                    //     var now_page_array = num.split('/');
+                                    //     var now_page = now_page_array[0];
+                                    //     if (now_page == 1) {
+                                    //         now_page = now_page_array[1];
+                                    //     } else {
+                                    //         now_page = now_page - 1;
+                                    //     }
+                                    //     window.location.href = (url + "?pic=" + now_page);
+                                    // });
 
-                                    $('.owl-next').on('click', function () {
-                                        var url = window.location.pathname;
-                                        var num = $('.owl-item').eq(1).find('.num').html();
-                                        var now_page_array = num.split('/');
-                                        var now_page = now_page_array[0];
-                                        if (now_page == now_page_array[1]) {
-                                            now_page = 1;
-                                        } else {
-                                            now_page = parseInt(now_page) + 1;
-                                        }
-                                        window.location.href = (url + "?pic=" + now_page);
+                                    // $('.owl-next').on('click', function () {
+                                    //     var url = window.location.pathname;
+                                    //     var num = $('.owl-item').eq(1).find('.num').html();
+                                    //     var now_page_array = num.split('/');
+                                    //     var now_page = now_page_array[0];
+                                    //     if (now_page == now_page_array[1]) {
+                                    //         now_page = 1;
+                                    //     } else {
+                                    //         now_page = parseInt(now_page) + 1;
+                                    //     }
+                                    //     window.location.href = (url + "?pic=" + now_page);
 
-                                    });
-                                    $(document).ready(function () {
+                                    // });
+                                    // $(document).ready(function () {
 
-                                        var url = window.location.pathname;
-                                        var querystring = window.location.search;
-                                        if (querystring != "") {
-                                            now_page = querystring.split('=')[1] - 1;
-                                            if (now_page == 0) {
-                                                now_page = 8;
-                                            }
-                                            owl.jumpTo(now_page);
-                                        }
+                                    //     var url = window.location.pathname;
+                                    //     var querystring = window.location.search;
+                                    //     if (querystring != "") {
+                                    //         now_page = querystring.split('=')[1] - 1;
+                                    //         if (now_page == 0) {
+                                    //             now_page = 8;
+                                    //         }
+                                    //         owl.jumpTo(now_page);
+                                    //     }
 
-                                    });
+                                    // });
                             //querystring控制頁數 end
                                 </script>
                                 <!--輪播外掛程式 ed-->

@@ -29,17 +29,42 @@ $(function() {
     }
 
     $(window).scroll(function() {
-        console.log("scrollTop:"+$(window).scrollTop());
-        console.log("_height:"+$(window).height());
-        console.log("doc_height:"+$(document).height());
-        if($(window).scrollTop() + $(window).height() > $(document).height()-100) {
-            //alert("near bottom!");
-            $("#back").css({"bottom":"112px","transition":"0.5s"});
+        var $all_h=$(window).scrollTop() + $(window).height();
+        var $obj_h=$('footer').outerHeight()+10;
+        var $header_h=$('header').outerHeight();
+        var $main_h=$('main').outerHeight();
+        var $foot_top= $header_h+$main_h;
+        var $bottom_ad_h=$('.flexd_bottom_ad').outerHeight();
+
+        if ($(window).scrollTop()>50){
+            $("#back").show();
+            $(".flexd_bottom_ad").show();
         }else{
-            $("#back").css({"bottom":"20px","transition":"0.5s"});
+            $("#back").hide();
+            $(".flexd_bottom_ad").hide();
         }
+        if ($(window).width()>767){
+            if($all_h > $foot_top) {
+                //alert("near bottom!");
+                $("#back").css({"bottom":$obj_h});
+            }else{
+                $("#back").css({"bottom":"20px"});
+            }
+        }else{
+            if($all_h > $foot_top) {
+                //alert("near bottom!");
+                $("#back").css({"bottom":$obj_h+$bottom_ad_h+10,"transition":"0s"});
+                $(".flexd_bottom_ad").css({"bottom":$obj_h});
+
+            }else{
+                $("#back").css({"bottom":$bottom_ad_h+21,"transition":"0s"});
+                $(".flexd_bottom_ad").css({"bottom":"11px"});
+            }
+        }
+
      });
 
  /*gotop ed*/
-
+//  蓋板關閉
+$('.lightbox_ad .xx').click(function(){$('.lightbox_ad').hide();});
 });
