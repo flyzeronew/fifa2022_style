@@ -30,14 +30,18 @@ $(function() {
 
     $(window).scroll(function() {
         var $all_h=$(window).scrollTop() + $(window).height();
-        var $foot_top=$('footer').offset().top;
         var $obj_h=$('footer').outerHeight()+10;
+        var $header_h=$('header').outerHeight();
+        var $main_h=$('main').outerHeight();
+        var $foot_top= $header_h+$main_h;
         var $bottom_ad_h=$('.flexd_bottom_ad').outerHeight();
-        
+
         if ($(window).scrollTop()>50){
             $("#back").show();
+            $(".flexd_bottom_ad").show();
         }else{
             $("#back").hide();
+            $(".flexd_bottom_ad").hide();
         }
         if ($(window).width()>767){
             if($all_h > $foot_top) {
@@ -51,10 +55,10 @@ $(function() {
                 //alert("near bottom!");
                 $("#back").css({"bottom":$obj_h+$bottom_ad_h+10,"transition":"0.5s"});
                 $(".flexd_bottom_ad").css({"bottom":$obj_h,"transition":"0.5s"});
-                
+
             }else{
                 $("#back").css({"bottom":$bottom_ad_h+10,"transition":"0.5s"});
-                $(".flexd_bottom_ad").css({"bottom":"0px","transition":"0.5s"});                
+                $(".flexd_bottom_ad").css({"bottom":"10px","transition":"0.5s"});
             }
         }
 
