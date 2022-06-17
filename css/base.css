@@ -159,6 +159,7 @@ a:hover,a:hover .txt_box .txt,a:hover .txt p{
     transition: 0.5s;  
     cursor: pointer;
     padding: 0;
+    display: none;
 }
 
 #back-img1 {
@@ -1557,7 +1558,7 @@ footer .logo_box li:first-child{width:80px;padding-top:0;margin-right:0;}
         margin-top:120px;
     }
 }
-@media (max-width:359px) {
+@media (max-width:374px) {
     footer small{font-size:12px!important;} 
 }
 /*footer ed*/
