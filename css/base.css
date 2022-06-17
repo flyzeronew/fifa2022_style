@@ -1281,6 +1281,7 @@ font-size: 20px;}
     display: -webkit-box;
 }
 .focus_news .time {
+    width: 100%;
     font-weight: normal;
     text-align:right;
     color:#4E483A;
@@ -1351,8 +1352,7 @@ font-size: 20px;}
         margin-bottom:0;
     }
     .focus_news .list .txt_box{
-        display: flex;flex-wrap: wrap;
-        justify-content:flex-end;
+        display: flex;flex-wrap: wrap;       
         align-content:space-between;      
     }
     .focus_news .list .txt {     
