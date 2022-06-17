@@ -67,4 +67,16 @@ $(function() {
  /*gotop ed*/
 //  蓋板關閉
 $('.lightbox_ad .xx').click(function(){$('.lightbox_ad').hide();});
+
+var team_tag=$('.team_tag li').outerHeight() * 4;
+$('.schedule_notice .nav li').click(function(){
+    $('.tag_more').find('.arraw').css({
+        transform:'rotate(0deg)',
+        transition:'0.5s'
+    });
+    $('.tag_more').find('p').html('更多球隊');
+    $('.team_tag ul').css({height:team_tag+'px',overflow:'hidden',transition:'0.5s'});
+    $('.tag_more').removeClass('op');
+});
+
 });
