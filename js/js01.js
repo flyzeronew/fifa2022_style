@@ -35,13 +35,12 @@ $(function() {
         var $bottom_ad_h=$('.flexd_bottom_ad').outerHeight();
 
         if ($(window).scrollTop()>50){
-            $("#back").show();
-            $(".flexd_bottom_ad").show();
+            $("#back").show();            
         }else{
-            $("#back").hide();
-            $(".flexd_bottom_ad").hide();
+            $("#back").hide();            
         }
-        if ($(window).width()>767){
+        if ($(window).width()>767){            
+            $(".flexd_bottom_ad").hide();
             if($all_h > $foot_top) {
                 //alert("near bottom!");
                 $("#back").css({"bottom":$obj_h});
@@ -49,6 +48,11 @@ $(function() {
                 $("#back").css({"bottom":"20px"});
             }
         }else{
+            if ($(window).scrollTop()>50){
+                $(".flexd_bottom_ad").show();
+            }else{
+                $(".flexd_bottom_ad").hide();
+            }          
             if($all_h > $foot_top) {
                 //alert("near bottom!");
                 $("#back").css({"bottom":$obj_h+$bottom_ad_h+10,"transition":"0.3s"});

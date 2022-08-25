@@ -33,12 +33,33 @@
 <!--本頁樣式-->
 <style>
     .aaa::before{content:"G";}
+    .container{height:auto;}
 </style>
 <!--本頁樣式ed-->
 <!--本頁js-->	
 <script type="text/javascript">
 $(document).ready(function(){
-
+        // 預防賽程內容不足顯示問題
+        function footer_fix(){
+         if($('html').height()>$(window).height()){
+            if ($(window).width()<767){
+                if ($(window).scrollTop()>50){
+                    $(".flexd_bottom_ad").show();
+                }else{
+                    $(".flexd_bottom_ad").hide();
+                } 
+            }
+            $('footer').css({position:'relative'});
+         }else{
+            $('.flexd_bottom_ad').hide();
+            $('footer').css({position:'fixed',bottom:0});
+          }
+        }
+        footer_fix();
+        $('.schedule_notice .section').click(function(){ footer_fix();});
+        $(window).resize(function() {footer_fix();});
+        $(window).scroll(function() {footer_fix();});
+        // 預防賽程內容不足顯示問題
 // 輪播-快訊
     $('.good_box .txt_box').owlCarousel({
         URLhashListener:true,
@@ -351,7 +372,7 @@ $('.contest').each(function(i){
                         </div>
                     </div>
                 </div>
-                <div class="section">
+                <!-- <div class="section">
                     <div class="contest">
                         <div class="title">
                             <div class="txt">4強賽</div>
@@ -471,8 +492,8 @@ $('.contest').each(function(i){
                             
                         </div>
                     </div>
-                </div>
-                <div class="section">
+                </div> -->
+                <!-- <div class="section">
                     <div class="contest">
                         <div class="title">
                             <div class="txt">16強賽</div>
@@ -560,7 +581,7 @@ $('.contest').each(function(i){
                             
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </article>
